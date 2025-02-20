@@ -1,12 +1,12 @@
-import Footer from "../components/Footer"
-import HeroSection from "../components/HeroSection"
-import Navbar from "../components/Navbar"
+import {Footer, HeroSection, Navbar} from "../components/index.js"
 
 function Home() {
     return (
         <>
             <Navbar />
-            <HeroSection />
+            <div className="pt-14">
+                <HeroSection />
+            </div>
             <Footer />
         </>
     )
