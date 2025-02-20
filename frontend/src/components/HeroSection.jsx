@@ -51,7 +51,7 @@ function HeroSection() {
     return (
 
 
-            <div className="inter primary-bg text-cl px-8 py-4 flex space-x-8">
+            <div className="inter primary-bg text-cl pt-8 px-8 py-4 flex space-x-8">
                 <div className="md:w-[70%]">
                 <div className="md:hidden mt-2 mb-6">
                     {timeLine()}
