@@ -15,7 +15,7 @@ function Navbar() {
   return (
     <nav className="primary-bg text-cl fixed top-0 left-0 right-0 shadow-lg z-50">
 
-      <div className="inter flex justify-between items-center px-8 py-4 ">
+      <div className="inter flex justify-between items-center px-4 md:px-8 py-4 ">
         {/* Logo */}
         <div className="text-xl font-bold">ReACS 2025</div>
 
