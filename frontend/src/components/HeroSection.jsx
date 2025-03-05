@@ -72,8 +72,8 @@ function HeroSection() {
                             <div className="heading-cl text-xl font-semibold">{item.heading}</div>
                             <div className="text-sm mt-1">{item.content}</div>
                         </div>
-                    ))}
-                    {/* <div className="mt-2">
+                        ))}
+                        {/* <div className="mt-2">
                             <div className="heading-cl text-md font-semibold">Vision Computing:</div>
                             <div className="text-[12px] mt-1">Image/video processing, Image/video synthesis, Image Enhancement/Super Resolution/Restoration, Image/Video Retrieval, Remote sensing, Multispectral/Hyperspectral image Processing, Segmentation and Shape Representation, Image/Video Scene Understanding, Medical Image and Video Analysis, Stereo Vision, Document Image Analysis, Image and Video Matching.</div>
                         </div>
@@ -105,13 +105,13 @@ function HeroSection() {
                             <div className="heading-cl text-md font-semibold">Emerging Computing Technologies and Systems: </div>
                             <div className="text-[12px] mt-1">Social Networks and Complex Networks, Algorithmic Game Theory and Computational Economics, Blockchain and Decentralized Systems, Post-Quantum Computing and Cryptography, Emerging Computing Paradigms, Ethics, Privacy, and Trust in Emerging Technologies, Applications of Emerging Technologies.</div>
                         </div> */}
+                    </div>
                 </div>
+                <div className="max-md:hidden w-[30%]">
+                    {timeLine()}
+                </div>
+                
             </div>
-            <div className="max-md:hidden w-[30%]">
-                {timeLine()}
-            </div>
-
-        </div>
     )
 }
 
