@@ -8,28 +8,28 @@ function Navbar() {
   const navItems = [
     "Home",
     "Dates",
-    "Program",
     "Registration",
+    "Program",
     "Sponsors"
   ]
   return (
     <nav className="primary-bg text-cl fixed top-0 left-0 right-0 shadow-lg z-50">
 
-      <div className="inter flex justify-between items-center px-4 md:px-8 py-4 ">
+      <div className="inter flex justify-between items-center px-4 md:px-8 py-4">
         {/* Logo */}
         <div className="text-xl font-bold">ReACS 2025</div>
 
         {/* Desktop */}
         <div>
           <ul className="hidden md:flex space-x-5 cursor-pointer font-semibold">
-            {navItems.map((item) => (
+            {/* {navItems.map((item) => (
               <li key={item} className="menu-item">{item}</li>
-            ))}
-              {/* <li className="menu-item"><Link to="/">Home</Link></li>
+            ))} */}
+              <li className="menu-item"><Link to="/">Home</Link></li>
               <li className="menu-item">Dates</li>
+              <li className="menu-item"><Link to="/registration">Registration</Link></li>
               <li className="menu-item">Program</li>
-              <li className="menu-item">Registration</li>
-              <li className="menu-item">Sponsors</li> */}
+              <li className="menu-item">Sponsors</li>
           </ul>
         </div>
 
