@@ -15,12 +15,12 @@ function Navbar() {
       item:"Dates",
     },
     {
-      id:"qweq3",
-      item:"Program",
-    },
-    {
       id:"qweq4",
       item:"Registration",
+    },
+    {
+      id:"qweq3",
+      item:"Program",
     },
     {
       id:"qweq5",
@@ -33,7 +33,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="primary-bg text-cl fixed top-0 left-0 right-0 shadow-lg z-50">
+    <nav className="text-cl fixed top-0 left-0 right-0 shadow-lg z-50">
 
       <div className="inter flex justify-between items-center px-4 md:px-8 py-4">
         {/* Logo */}
@@ -96,7 +96,6 @@ function Navbar() {
               ))}
             </ul>
           </div>
-          <hr/>
         </div>
       </div>
       

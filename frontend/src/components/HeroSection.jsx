@@ -4,7 +4,7 @@ function HeroSection() {
     const timeLine = () => {
         return (
             <div >
-                <div className="text-2xl heading-cl font-bold">Timeline</div>
+                <div className="text-2xl md:text-3xl heading-cl font-bold">Important Dates</div>
                 <div className="my-2 text-sm">
                     20-02-2025 <span className="text-white ml-2">No dates updated</span>
                 </div>
@@ -49,29 +49,20 @@ function HeroSection() {
     ]
 
     return (
-
-
-        <div className="inter primary-bg text-cl pt-8 px-4 md:px-8 py-4 flex space-x-8">
-
-            <div className="md:w-[70%]">
-                <div className="md:hidden mt-2 mb-6">
-                    {timeLine()}
-                </div>
-                <div className="mb-6">
-                    <div className="heading-cl text-2xl font-bold">Welcome to ReACS 2025</div>
-                    <div className="text-sm mt-2">Recent Advances in Computing and Systems - 2025</div>
-                </div>
-                <div className="mb-6">
-                    <div className="heading-cl text-2xl font-bold">About ReACS</div>
-                    <div className="text-sm mt-2">The International Conference on Recent Advances in Computing and Systems, 2025 (ReACS-2025) is being organised by the Department of CSE, ABV-IIITM, to functionalize it as a platform for dissemination of recent high-quality research work in the domain of Computing and Systems. This conference covers the wide domain of Computer Science and Engineering and will provide a means to exchange innovative ideas and recent advances among researchers from academia and industry.</div>
-                </div>
-                <div>
-                    <div className="heading-cl text-2xl font-bold">Regular Tracks</div>
-                    {RegularTracks.map((item) => (
-                        <div className="mt-2">
-                            <div className="heading-cl text-xl font-semibold">{item.heading}</div>
-                            <div className="text-sm mt-1">{item.content}</div>
-                        </div>
+        <div className="inter primary-bg text-cl pt-8 px-4 md:px-8 py-4">
+            <div className="mb-6 pb-4 border-b-1">
+                <div className="heading-cl text-3xl md:text-4xl font-bold">Welcome to REACS 2025</div>
+                <div className="text-sm/relaxed mt-4"><span className="font-semibold">Welcome to the International Conference on Recent Advances in Computing and Systems (REACS2025) is being organised by the Department of CSE, ABV-IIITM</span>, to functionalize it as a platform for dissemination of recent high-quality research work in the domain of Computing and Systems. This conference covers the wide domain of Computer Science and Engineering and will provide a means to exchange innovative ideas and recent advances among researchers from academia and industry.</div>
+            </div>
+            <div className="flex space-x-8">
+                <div className="md:w-[70%]">
+                    <div>
+                        <div className="heading-cl text-2xl md:text-3xl font-bold mb-6">Regular Tracks</div>
+                        {RegularTracks.map((item) => (
+                            <div className="mt-2">
+                                <div className="text-black font-bold">{item.heading}</div>
+                                <div className="md:text-[12px] text-sm/relaxed mt-1">{item.content}</div>
+                            </div>
                         ))}
                         {/* <div className="mt-2">
                             <div className="heading-cl text-md font-semibold">Vision Computing:</div>
@@ -105,13 +96,18 @@ function HeroSection() {
                             <div className="heading-cl text-md font-semibold">Emerging Computing Technologies and Systems: </div>
                             <div className="text-[12px] mt-1">Social Networks and Complex Networks, Algorithmic Game Theory and Computational Economics, Blockchain and Decentralized Systems, Post-Quantum Computing and Cryptography, Emerging Computing Paradigms, Ethics, Privacy, and Trust in Emerging Technologies, Applications of Emerging Technologies.</div>
                         </div> */}
+                        <div className="md:hidden mt-5 mb-6">
+                            {timeLine()}
+                        </div>
                     </div>
                 </div>
                 <div className="max-md:hidden w-[30%]">
                     {timeLine()}
                 </div>
-                
+
             </div>
+
+        </div>
     )
 }
 

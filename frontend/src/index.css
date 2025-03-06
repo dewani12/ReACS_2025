@@ -8,18 +8,14 @@
     font-style: normal;
 }
 
-.primary-bg{
-    background-color: #1D232A;
-}
-
 .heading-cl{
-    color: #2563EB;
+    color: #0054B0;
 }
 
 .text-cl{
-    color: #A6ADBB;
+    color: black;
 }
-
+/* 
 .menu-item {
     padding: 1px 5px;
     border-radius: 5px;
@@ -28,4 +24,4 @@
 .menu-item:hover {
     background-color: #383F47;  
     transition: 0.3s;
-}
+} */

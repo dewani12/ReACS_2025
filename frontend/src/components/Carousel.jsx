@@ -11,16 +11,12 @@ const Carousel = () => {
       image: `${img1}`,
       title: "ReACS'25",
       subtitle:"The International Conference on Recent Advances in Computing and Systems, 2025 ",
-      description: "Department of CSE, IIITM Gwalior Dec 19,20, (Friday and Saturday), 2025"
     },
     {
       image: `${img2}`,
       title: "ReACS'25",
       subtitle: "The International Conference on Recent Advances in Computing and Systems, 2025",
-      description: "Department of CSE, IIITM Gwalior Dec 19,20, (Friday and Saturday), 2025"
-
     },
-    
   ];
 
   useEffect(() => {
@@ -46,10 +42,10 @@ const Carousel = () => {
           alt={slide.title}
           className="w-full h-full object-cover"
         />
-          <div className="absolute inset-0 flex flex-col items-center md:items-start max-md:mx-4 md:ml-16 mb-10 justify-end  text-white z-20">
-            <h1 className="text-4xl md:text-5xl font-bold mb-2 text-center">{slide.title}</h1>
+          <div className="absolute inset-0 flex flex-col items-center md:items-start max-md:mx-4 md:ml-8 mb-10 justify-end text-white z-20">
+            <h1 className="text-4xl md:text-4xl font-bold mb-2 text-center">{slide.title}</h1>
             <p className="text-base text-center font-bold md:text-start w-[80] md:w-[110]">{slide.subtitle}</p>
-            <p className="text-[12px] mt-1 font-bold text-center md:text-start w-[52] md:w-[52]">{slide.description}</p>
+            <p className="text-mdw mt-1 font-bold text-center md:text-start w-[52] md:w-[52]">19-20 December 2025 &#x2022; IIITM Gwalior, INDIA</p>
           </div>
         </div>
       ))}
