@@ -1,0 +1,82 @@
+
+function MainSection() {
+
+    const timeLine = () => {
+        return (
+            <div >
+                <div className="text-2xl md:text-3xl heading-cl font-bold">Important Dates</div>
+                <div className="my-2 text-sm">
+                    20-02-2025 <span className="text-white ml-2">No dates updated</span>
+                </div>
+                <hr />
+            </div>
+        )
+    }
+
+    const RegularTracks = [
+        {
+            heading: "Vision Computing:",
+            content: "Image/video processing, Image/video synthesis, Image Enhancement/Super Resolution/Restoration, Image/Video Retrieval, Remote sensing, Multispectral/Hyperspectral image Processing, Segmentation and Shape Representation, Image/Video Scene Understanding, Medical Image and Video Analysis, Stereo Vision, Document Image Analysis, Image and Video Matching."
+        },
+        {
+            heading: "Cybersecurity and Forensics:",
+            content: "Network and cyber security, Computer security, Systems security, Security policy, model and architecture, Formal methods and verification, Security in mobile and wireless communications,  Privacy and trust, Attacks on AI models, Privacy preservation of AI, Malware forensics, Mobile app forensics, Blockchains and distributed ledger security, IoT security."
+        },
+        {
+            heading: "AI and Data Science:",
+            content: "Computational Intelligence, Optimization Techniques, Explainable AI, Value AI, Robotic Intelligence, Data Intelligence, Multimedia Intelligent Systems, Document and Synthetic Visual Processing, Transfer Learning, Multi-task Learning, Evolutionary Algorithms, Graph Convolutional Networks, Applications in AI."
+        },
+        {
+            heading: "Communication Networks:",
+            content: "Next-Generation Internet Architectures, Software-Defined Networking (SDN), Network Function Virtualization (NFV), Protocol Design and Optimization, Network Interoperability, Cellular Networks (5G, 6G, and Beyond), Ad Hoc, Mesh, and Sensor Networks, Vehicular Networks (VANETs, V2X), Data Dissemination in Intelligent Transportation System, Low-Power Wide-Area Networks (LPWANs), Wireless Body Area Networks (WBANs), AI/ML in Communication Networks, Multimedia Streaming Services, IoT-Fog interconnection Network, Mobile Edge Computing, Cloud Computing etc."
+        },
+        {
+            heading: "Cyber Physical Systems and IoT:",
+            content: "Smart Cities and Infrastructure, Industrial IoT (IIoT) and Smart Manufacturing, Edge Computing and IoT, Security and Privacy in IoT and CPS, Sensors and Actuators in IoT, IoT Data Analytics and Machine Learning, Healthcare and Medical IoT (Health IoT), Energy Management and Smart Grids, CPS for autonomous robots and drones, Standards and Interoperability in IoT."
+        },
+        {
+            heading: "Robotics and Autonomous Systems:",
+            content: "SLAM, Sensor Fusion, AI navigation, Deep/reinforcement learning in robotics, Swarm coordination, Automation in manufacturing, Healthcare, Agriculture. Autonomous Vehicles, UAVs, Underwater Robots, Human-Robot interaction and Assistive Robotics, Cybersecurity in Robotics, Multi Agent Systems, Emergent behaviour."
+        },
+        {
+            heading: "Computer and Software Systems:",
+            content: "Computer Architecture, Distributed Systems, High-Performance Computing, Embedded Systems, Cloud Computing, Human-Computer Interaction, Software architecture and design patterns, Secure software development and Static Code Analysis, Model-driven engineering and low-code development, Open-source software development and governance, Software testing, verification, and validation."
+        },
+        {
+            heading: "Emerging Computing Technologies and Systems:",
+            content: "Social Networks and Complex Networks, Algorithmic Game Theory and Computational Economics, Blockchain and Decentralized Systems, Post-Quantum Computing and Cryptography, Emerging Computing Paradigms, Ethics, Privacy, and Trust in Emerging Technologies, Applications of Emerging Technologies."
+        },
+    ]
+
+    return (
+        <div className="inter primary-bg text-cl px-4 md:px-8 py-2 sm:py-4 md:py-8">
+            <div className="mb-6 pb-4 border-b-1">
+                <div className="heading-cl text-3xl md:text-4xl font-bold">Welcome to REACS 2025</div>
+                <div className="text-sm/relaxed mt-4"><span className="font-semibold">Welcome to the International Conference on Recent Advances in Computing and Systems (REACS2025) is being organised by the Department of CSE, ABV-IIITM</span>, to functionalize it as a platform for dissemination of recent high-quality research work in the domain of Computing and Systems. This conference covers the wide domain of Computer Science and Engineering and will provide a means to exchange innovative ideas and recent advances among researchers from academia and industry.</div>
+            </div>
+            <div className="flex space-x-8">
+                <div className="md:w-[70%]">
+                    <div>
+                        <div className="heading-cl text-2xl md:text-3xl font-bold mb-6">Regular Tracks</div>
+                        {RegularTracks.map((item, index) => (
+                            <div key={index} className="mt-2">
+                                <div className="text-black font-bold">{item.heading}</div>
+                                <div className="md:text-[12px]  text-sm/relaxed mt-1">{item.content}</div>
+                            </div>
+                        ))}
+                        <div className="md:hidden mt-5 mb-6">
+                            {timeLine()}
+                        </div>
+                    </div>
+                </div>
+                <div className="max-md:hidden w-[30%]">
+                    {timeLine()}
+                </div>
+
+            </div>
+
+        </div>
+    )
+}
+
+export default MainSection

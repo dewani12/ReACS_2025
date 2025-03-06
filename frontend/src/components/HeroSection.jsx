@@ -1,114 +1,119 @@
+import React from 'react';
+import { useState, useEffect } from 'react';
+import img1 from "./../assets/collegeImg1.svg"
+import img2 from "./../assets/collegeImg2.svg"
+import { Menu, X, ChevronDown, Search } from 'lucide-react';
 
 function HeroSection() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [currentSlide, setCurrentSlide] = useState(0);
 
-    const timeLine = () => {
-        return (
-            <div >
-                <div className="text-2xl md:text-3xl heading-cl font-bold">Important Dates</div>
-                <div className="my-2 text-sm">
-                    20-02-2025 <span className="text-white ml-2">No dates updated</span>
-                </div>
-                <hr />
-            </div>
-        )
-    }
+  const navItems = ["Home", "Dates","Registration", "Program", "Sponsors",]
 
-    const RegularTracks = [
-        {
-            heading: "Vision Computing:",
-            content: "Image/video processing, Image/video synthesis, Image Enhancement/Super Resolution/Restoration, Image/Video Retrieval, Remote sensing, Multispectral/Hyperspectral image Processing, Segmentation and Shape Representation, Image/Video Scene Understanding, Medical Image and Video Analysis, Stereo Vision, Document Image Analysis, Image and Video Matching."
-        },
-        {
-            heading: "Cybersecurity and Forensics:",
-            content: "Network and cyber security, Computer security, Systems security, Security policy, model and architecture, Formal methods and verification, Security in mobile and wireless communications,  Privacy and trust, Attacks on AI models, Privacy preservation of AI, Malware forensics, Mobile app forensics, Blockchains and distributed ledger security, IoT security."
-        },
-        {
-            heading: "AI and Data Science:",
-            content: "Computational Intelligence, Optimization Techniques, Explainable AI, Value AI, Robotic Intelligence, Data Intelligence, Multimedia Intelligent Systems, Document and Synthetic Visual Processing, Transfer Learning, Multi-task Learning, Evolutionary Algorithms, Graph Convolutional Networks, Applications in AI."
-        },
-        {
-            heading: "Communication Networks:",
-            content: "Next-Generation Internet Architectures, Software-Defined Networking (SDN), Network Function Virtualization (NFV), Protocol Design and Optimization, Network Interoperability, Cellular Networks (5G, 6G, and Beyond), Ad Hoc, Mesh, and Sensor Networks, Vehicular Networks (VANETs, V2X), Data Dissemination in Intelligent Transportation System, Low-Power Wide-Area Networks (LPWANs), Wireless Body Area Networks (WBANs), AI/ML in Communication Networks, Multimedia Streaming Services, IoT-Fog interconnection Network, Mobile Edge Computing, Cloud Computing etc."
-        },
-        {
-            heading: "Cyber Physical Systems and IoT:",
-            content: "Smart Cities and Infrastructure, Industrial IoT (IIoT) and Smart Manufacturing, Edge Computing and IoT, Security and Privacy in IoT and CPS, Sensors and Actuators in IoT, IoT Data Analytics and Machine Learning, Healthcare and Medical IoT (Health IoT), Energy Management and Smart Grids, CPS for autonomous robots and drones, Standards and Interoperability in IoT."
-        },
-        {
-            heading: "Robotics and Autonomous Systems:",
-            content: "SLAM, Sensor Fusion, AI navigation, Deep/reinforcement learning in robotics, Swarm coordination, Automation in manufacturing, Healthcare, Agriculture. Autonomous Vehicles, UAVs, Underwater Robots, Human-Robot interaction and Assistive Robotics, Cybersecurity in Robotics, Multi Agent Systems, Emergent behaviour."
-        },
-        {
-            heading: "Computer and Software Systems:",
-            content: "Computer Architecture, Distributed Systems, High-Performance Computing, Embedded Systems, Cloud Computing, Human-Computer Interaction, Software architecture and design patterns, Secure software development and Static Code Analysis, Model-driven engineering and low-code development, Open-source software development and governance, Software testing, verification, and validation."
-        },
-        {
-            heading: "Emerging Computing Technologies and Systems:",
-            content: "Social Networks and Complex Networks, Algorithmic Game Theory and Computational Economics, Blockchain and Decentralized Systems, Post-Quantum Computing and Cryptography, Emerging Computing Paradigms, Ethics, Privacy, and Trust in Emerging Technologies, Applications of Emerging Technologies."
-        },
-    ]
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
-    return (
-        <div className="inter primary-bg text-cl pt-8 px-4 md:px-8 py-4">
-            <div className="mb-6 pb-4 border-b-1">
-                <div className="heading-cl text-3xl md:text-4xl font-bold">Welcome to REACS 2025</div>
-                <div className="text-sm/relaxed mt-4"><span className="font-semibold">Welcome to the International Conference on Recent Advances in Computing and Systems (REACS2025) is being organised by the Department of CSE, ABV-IIITM</span>, to functionalize it as a platform for dissemination of recent high-quality research work in the domain of Computing and Systems. This conference covers the wide domain of Computer Science and Engineering and will provide a means to exchange innovative ideas and recent advances among researchers from academia and industry.</div>
-            </div>
-            <div className="flex space-x-8">
-                <div className="md:w-[70%]">
-                    <div>
-                        <div className="heading-cl text-2xl md:text-3xl font-bold mb-6">Regular Tracks</div>
-                        {RegularTracks.map((item) => (
-                            <div className="mt-2">
-                                <div className="text-black font-bold">{item.heading}</div>
-                                <div className="md:text-[12px] text-sm/relaxed mt-1">{item.content}</div>
-                            </div>
-                        ))}
-                        {/* <div className="mt-2">
-                            <div className="heading-cl text-md font-semibold">Vision Computing:</div>
-                            <div className="text-[12px] mt-1">Image/video processing, Image/video synthesis, Image Enhancement/Super Resolution/Restoration, Image/Video Retrieval, Remote sensing, Multispectral/Hyperspectral image Processing, Segmentation and Shape Representation, Image/Video Scene Understanding, Medical Image and Video Analysis, Stereo Vision, Document Image Analysis, Image and Video Matching.</div>
-                        </div>
-                        <div className="mt-2">
-                            <div className="heading-cl text-md font-semibold">Cybersecurity and Forensics:</div>
-                            <div className="text-[12px] mt-1">Network and cyber security, Computer security, Systems security, Security policy, model and architecture, Formal methods and verification, Security in mobile and wireless communications,  Privacy and trust, Attacks on AI models, Privacy preservation of AI, Malware forensics, Mobile app forensics, Blockchains and distributed ledger security, IoT security.</div>
-                        </div>
-                        <div className="mt-2">
-                            <div className="heading-cl text-md font-semibold">AI and Data Science:</div>
-                            <div className="text-[12px] mt-1">Computational Intelligence, Optimization Techniques, Explainable AI, Value AI, Robotic Intelligence, Data Intelligence, Multimedia Intelligent Systems, Document and Synthetic Visual Processing, Transfer Learning, Multi-task Learning, Evolutionary Algorithms, Graph Convolutional Networks, Applications in AI.</div>
-                        </div>
-                        <div className="mt-2">
-                            <div className="heading-cl text-md font-semibold">Communication Networks: </div>
-                            <div className="text-[12px] mt-1">Next-Generation Internet Architectures, Software-Defined Networking (SDN), Network Function Virtualization (NFV), Protocol Design and Optimization, Network Interoperability, Cellular Networks (5G, 6G, and Beyond), Ad Hoc, Mesh, and Sensor Networks, Vehicular Networks (VANETs, V2X), Data Dissemination in Intelligent Transportation System, Low-Power Wide-Area Networks (LPWANs), Wireless Body Area Networks (WBANs), AI/ML in Communication Networks, Multimedia Streaming Services, IoT-Fog interconnection Network, Mobile Edge Computing, Cloud Computing etc.</div>
-                        </div>
-                        <div className="mt-2">
-                            <div className="heading-cl text-md font-semibold">Cyber Physical Systems and IoT: </div>
-                            <div className="text-[12px] mt-1">Smart Cities and Infrastructure, Industrial IoT (IIoT) and Smart Manufacturing, Edge Computing and IoT, Security and Privacy in IoT and CPS, Sensors and Actuators in IoT, IoT Data Analytics and Machine Learning, Healthcare and Medical IoT (Health IoT), Energy Management and Smart Grids, CPS for autonomous robots and drones, Standards and Interoperability in IoT.</div>
-                        </div>
-                        <div className="mt-2">
-                            <div className="heading-cl text-md font-semibold">Robotics and Autonomous Systems: </div>
-                            <div className="text-[12px] mt-1">SLAM, Sensor Fusion, AI navigation, Deep/reinforcement learning in robotics, Swarm coordination, Automation in manufacturing, Healthcare, Agriculture. Autonomous Vehicles, UAVs, Underwater Robots, Human-Robot interaction and Assistive Robotics, Cybersecurity in Robotics, Multi Agent Systems, Emergent behaviour.</div>
-                        </div>
-                        <div className="mt-2">
-                            <div className="heading-cl text-md font-semibold">Computer and Software Systems: </div>
-                            <div className="text-[12px] mt-1">Computer Architecture, Distributed Systems, High-Performance Computing, Embedded Systems, Cloud Computing, Human-Computer Interaction, Software architecture and design patterns, Secure software development and Static Code Analysis, Model-driven engineering and low-code development, Open-source software development and governance, Software testing, verification, and validation.</div>
-                        </div>
-                        <div className="mt-2">
-                            <div className="heading-cl text-md font-semibold">Emerging Computing Technologies and Systems: </div>
-                            <div className="text-[12px] mt-1">Social Networks and Complex Networks, Algorithmic Game Theory and Computational Economics, Blockchain and Decentralized Systems, Post-Quantum Computing and Cryptography, Emerging Computing Paradigms, Ethics, Privacy, and Trust in Emerging Technologies, Applications of Emerging Technologies.</div>
-                        </div> */}
-                        <div className="md:hidden mt-5 mb-6">
-                            {timeLine()}
-                        </div>
-                    </div>
-                </div>
-                <div className="max-md:hidden w-[30%]">
-                    {timeLine()}
-                </div>
+    const slides = [`${img1}`,`${img2}`];
 
-            </div>
+  
+    useEffect(() => {
+      const timer = setInterval(() => {
+        setCurrentSlide((prev) => (prev + 1) % slides.length);
+      }, 9000);
+      return () => clearInterval(timer);
+    }, []);  
 
+  return (
+    <div className="inter">
+      <div className="relative">
+        {/* Background Image */}
+        {slides.map((slide, index) => (
+            <div className={`absolute inset-0 ${
+                index === currentSlide ? 'opacity-100' : 'opacity-0'
+              }`}>
+            <img
+                className="w-full h-[300px] sm:h-[400px] md:h-[600px] object-cover"
+                src={slide}
+                alt="library image"
+            />
+            <div className="absolute h-[300px] sm:h-[400px] md:h-[600px] inset-0 bg-gradient-to-b from-black/60 to-black/40" />
         </div>
-    )
+        ))}
+
+        <div className="md:hidden z-50 absolute right-3 top-3">
+            <button
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                className="inline-flex items-center justify-center p-2 bg-gray-200/30 rounded-md text-white cursor-pointer focus:outline-none"
+            >
+                {isMenuOpen ? <X className="h-8 w-8" /> : <Menu className="h-6 w-6" />}
+            </button>
+        </div>
+
+        {/* Hero Content */}
+        <div className="relative max-w-7xl mx-auto px-4 py-16 sm:py-32 md:py-48 sm:px-6 lg:px-4">
+          <h1 className="text-2xl md:text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl text-center">
+            REACS 2025
+          </h1>
+          <p className="mt-6 text-lg md:text-xl text-white text-center max-w-3xl mx-auto font-semibold">
+          The International Conference on Recent Advances in Computing and Systems
+          </p>
+          <p className="mt-4 text-md md:text-lg text-white text-center font-semibold">
+          DEC 19-20, 2025, IIITM GWALIOR
+          </p>
+
+          {/* Navbar */}
+          <nav className="relative z-10 mt-8">
+            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="flex items-center justify-center">
+                <div className="hidden md:block bg-[#2769b0]/80 rounded-4xl px-4">
+                  <div className="flex items-baseline space-x-1">
+                    {navItems.map((item) => (
+                        <a key={item} href="#" className="px-8 py-2  text-sm font-medium text-white hover:bg-[#2769b0]">{item}</a>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        {/* Mobile menu */}
+    <div 
+        className={`fixed inset-y-0 right-0 transform ${
+          isMenuOpen ? 'translate-x-0' : 'translate-x-full'
+        } w-64 bg-black shadow-lg z-50 text-white overflow-y-auto transition-transform duration-300 ease-in-out md:hidden`}
+    >
+        <div className="p-1">
+          <div className="flex items-center justify-between mt-20 my-6">
+            <div className="flex items-center">
+              <div className=" pl-4 rounded-lg flex items-center justify-center">
+              <h1 className="text-3xl font-bold">REACS 2025</h1>
+              </div>
+            </div>
+          </div>
+   
+          <div>
+            <ul className="md:flex space-y-2 cursor-pointer font-semibold my-5">
+              {navItems.map((item) => (
+                <li key={item} className="pl-4 pb-2 border-gray-800 border-b-1">{item}</li>
+              ))}
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+      
+      {/* Overlay when mobile menu is open */}
+      {isMenuOpen && (
+        <div 
+          className="fixed inset-0 bg-black/40 z-30 md:hidden"
+          onClick={toggleMenu}
+        ></div>
+      )}
+        </nav>
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default HeroSection
+export default HeroSection;

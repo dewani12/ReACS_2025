@@ -1,11 +1,10 @@
-import { Carousel, Footer, HeroSection, Navbar } from "../components/index.js"
+import {Footer, HeroSection, MainSection } from "../components/index.js"
 
 function Home() {
     return (
         <>
-            <Navbar />
-            <Carousel />
             <HeroSection />
+            <MainSection/>
             <Footer />
         </>
     )
