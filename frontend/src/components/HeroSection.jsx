@@ -55,11 +55,11 @@ function HeroSection() {
           <h1 className="text-3xl md:text-4xl font-extrabold tracking-normal text-white sm:text-3xl lg:text-6xl text-center">
             REACS 2025
           </h1>
-          <p className="mt-6 text-md tracking-wider md:text-xl text-white text-center max-w-3xl mx-auto font-semibold">
+          <p className="mt-6 text-md tracking-wider md:text-xl text-white text-center max-w-4xl mx-auto font-semibold">
           The International Conference on Recent Advances in Computing and Systems
           </p>
           <p className="mt-4 tracking-wider text-sm md:text-lg text-white text-center font-bold">
-          19-20 December 2025 ABV-IIITM Gwalior, INDIA
+          19-20 December 2025 &#x2022; ABV-IIITM Gwalior, India
           </p>
 
           {/* Navbar */}
