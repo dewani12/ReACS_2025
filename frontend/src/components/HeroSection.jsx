@@ -33,11 +33,11 @@ function HeroSection() {
                 index === currentSlide ? 'opacity-100' : 'opacity-0'
               }`}>
             <img
-                className="w-full h-[300px] sm:h-[400px] md:h-[600px] object-cover"
+                className="w-full h-[400px] sm:h-[400px] md:h-[95vh] object-cover"
                 src={slide}
                 alt="library image"
             />
-            <div className="absolute h-[300px] sm:h-[400px] md:h-[600px] inset-0 bg-gradient-to-b from-black/60 to-black/40" />
+            <div className="absolute h-[400px] sm:h-[400px] md:h-[95vh] inset-0 bg-gradient-to-b from-black/60 to-black/40" />
         </div>
         ))}
 
@@ -51,15 +51,15 @@ function HeroSection() {
         </div>
 
         {/* Hero Content */}
-        <div className="relative max-w-7xl mx-auto px-4 py-16 sm:py-32 md:py-48 sm:px-6 lg:px-4">
+        <div className="relative max-w-7xl mx-auto px-4 py-30 sm:py-30 md:py-34 sm:px-6 lg:px-4">
           <h1 className="text-2xl md:text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl text-center">
             REACS 2025
           </h1>
           <p className="mt-6 text-lg md:text-xl text-white text-center max-w-3xl mx-auto font-semibold">
           The International Conference on Recent Advances in Computing and Systems
           </p>
-          <p className="mt-4 text-md md:text-lg text-white text-center font-semibold">
-          DEC 19-20, 2025, IIITM GWALIOR
+          <p className="mt-4 text-md md:text-lg text-white text-center font-bold">
+          19-20 December 2025 &#x2022; IIITM Gwalior, INDIA
           </p>
 
           {/* Navbar */}
