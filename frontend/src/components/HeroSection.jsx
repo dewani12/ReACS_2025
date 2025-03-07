@@ -33,11 +33,11 @@ function HeroSection() {
                 index === currentSlide ? 'opacity-100' : 'opacity-0'
               }`}>
             <img
-                className="w-full h-[400px] sm:h-[400px] md:h-[95vh] object-cover"
+                className="w-full h-[400px] sm:h-[400px] md:h-[600px] object-cover"
                 src={slide}
                 alt="library image"
             />
-            <div className="absolute h-[400px] sm:h-[400px] md:h-[95vh] inset-0 bg-gradient-to-b from-black/60 to-black/40" />
+            <div className="absolute h-[400px] sm:h-[400px] md:h-[600px] inset-0 bg-gradient-to-b from-black/60 to-black/40" />
         </div>
         ))}
 
@@ -51,7 +51,7 @@ function HeroSection() {
         </div>
 
         {/* Hero Content */}
-        <div className="relative max-w-7xl mx-auto px-4 py-30 sm:py-30 md:py-34 sm:px-6 lg:px-4">
+        <div className="relative max-w-7xl mx-auto px-4 py-30 sm:py-30 md:py-46 sm:px-6 lg:px-4">
           <h1 className="text-2xl md:text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl text-center">
             REACS 2025
           </h1>
