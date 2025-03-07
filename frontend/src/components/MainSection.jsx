@@ -49,19 +49,19 @@ function MainSection() {
     ]
 
     return (
-        <div className="inter primary-bg text-cl px-4 md:px-8 py-2 sm:py-4 md:py-8">
+        <div className="inter primary-bg text-cl px-4 md:px-12 py-2 sm:py-4 md:py-8">
             <div className="mb-6 pb-4 border-b-1">
-                <div className="heading-cl text-3xl md:text-4xl font-bold">Welcome to REACS 2025</div>
-                <div className="text-sm/relaxed mt-4"><span className="font-semibold">Welcome to the International Conference on Recent Advances in Computing and Systems (REACS2025) is being organised by the Department of CSE, ABV-IIITM</span>, to functionalize it as a platform for dissemination of recent high-quality research work in the domain of Computing and Systems. This conference covers the wide domain of Computer Science and Engineering and will provide a means to exchange innovative ideas and recent advances among researchers from academia and industry.</div>
+                <div className="heading-cl text-3xl md:text-4xl tracking-normal font-bold">Welcome to REACS 2025</div>
+                <div className="text-sm/relaxed mt-4 tracking-wider"><span className="font-semibold">Welcome to the International Conference on Recent Advances in Computing and Systems (REACS2025) is being organised by the Department of CSE, ABV-IIITM</span>, to functionalize it as a platform for dissemination of recent high-quality research work in the domain of Computing and Systems. This conference covers the wide domain of Computer Science and Engineering and will provide a means to exchange innovative ideas and recent advances among researchers from academia and industry.</div>
             </div>
             <div className="flex space-x-8">
                 <div className="md:w-[70%]">
                     <div>
-                        <div className="heading-cl text-2xl md:text-3xl font-bold mb-6">Regular Tracks</div>
+                        <div className="heading-cl text-2xl md:text-3xl font-bold text-justify mb-6">Regular Tracks</div>
                         {RegularTracks.map((item, index) => (
-                            <div key={index} className="mt-2">
-                                <div className="text-black font-bold">{item.heading}</div>
-                                <div className="md:text-[12px]  text-sm/relaxed mt-1">{item.content}</div>
+                            <div key={index} className="mt-4 md:mt-5">
+                                <div className="text-black tracking-wider text-md md:text-lg font-bold">{item.heading}</div>
+                                <div className=" md:text-sm tracking-wider text-sm/relaxed mt-1 text-justify">{item.content}</div>
                             </div>
                         ))}
                         <div className="md:hidden mt-5 mb-6">
