@@ -4,27 +4,12 @@ function MainSection() {
     const timeLine = () => {
         const events = [
             {   
-                oldDate: "Feb. 20, 2025",
-                newDate: "March 8, 2025",
-                label: "Website Updated",
+                newDate: "March 10, 2025",
+                label: "Dates will be updated soon",
             },
-            {   
-                oldDate: "Feb. 20, 2025",
-                newDate: "March 8, 2025",
-                label: "Website Updated",
-            },
-            {   
-                oldDate: "Feb. 20, 2025",
-                newDate: "March 8, 2025",
-                label: "Website Updated",
-            },
-            {   
-                newDate: "Dec. 19, 2025",
-                label: "Conference Day 1",
-            }
         ];
         return (
-            <div >
+            <div>
                 <div className="text-2xl md:text-3xl heading-cl font-bold mb-3">Important Dates</div>
                 <div className="border-l-3 py-1 border-[#0054B0] relative">
                     {events.map((event, index) => (
@@ -83,16 +68,16 @@ function MainSection() {
         <div className="inter primary-bg text-cl py-2 px-4 md:px-12 sm:py-4 md:py-8 max-w-[1280px] mx-auto">
             <div className="mb-6 pb-4 border-b-1">
                 <div className="heading-cl text-3xl md:text-4xl tracking-normal font-bold">Welcome to REACS 2025</div>
-                <div className="text-sm/relaxed mt-4 tracking-wider text-justify"><span className="font-semibold">Welcome to the International Conference on Recent Advances in Computing and Systems (REACS2025) is being organised by the Department of CSE, ABV-IIITM</span>, to functionalize it as a platform for dissemination of recent high-quality research work in the domain of Computing and Systems. This conference covers the wide domain of Computer Science and Engineering and will provide a means to exchange innovative ideas and recent advances among researchers from academia and industry.</div>
+                <div className="text-sm/relaxed mt-4 tracking-wide text-justify"><span className="font-semibold">Welcome to the International Conference on Recent Advances in Computing and Systems (REACS2025) is being organised by the Department of CSE, ABV-IIITM</span>, to functionalize it as a platform for dissemination of recent high-quality research work in the domain of Computing and Systems. This conference covers the wide domain of Computer Science and Engineering and will provide a means to exchange innovative ideas and recent advances among researchers from academia and industry.</div>
             </div>
-            <div className="flex space-x-8">
+            <div className="flex md:space-x-8">
                 <div className="md:w-[70%]">
                     <div>
                         <div className="heading-cl text-2xl md:text-3xl font-bold text-justify mb-6">Regular Tracks</div>
                         {RegularTracks.map((item, index) => (
                             <div key={index} className="mt-4 md:mt-5">
                                 <div className="text-black tracking-wider text-md md:text-lg font-bold">{item.heading}</div>
-                                <div className=" md:text-sm tracking-wider text-sm/relaxed mt-1 text-justify">{item.content}</div>
+                                <div className="text-justify tracking-wide text-sm/relaxed mt-1">{item.content}</div>
                             </div>
                         ))}
                         <div className="md:hidden my-5 border-t-1 pt-6">
