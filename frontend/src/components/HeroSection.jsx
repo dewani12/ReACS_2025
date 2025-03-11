@@ -16,7 +16,8 @@ function HeroSection() {
 
     const slides = [`${img1}`,`${img2}`];
 
-  
+
+    
     useEffect(() => {
       const timer = setInterval(() => {
         setCurrentSlide((prev) => (prev + 1) % slides.length);
