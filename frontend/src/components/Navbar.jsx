@@ -15,20 +15,20 @@ const Navbar = () => {
       link: "/"
     },
     {
-      item:"Dates",
-      link: "/dates"
-    },
-    {
       item:"Registration",
       link: "/registration"
     },
     {
-      item:"Program",
-      link: "/program"
+      item:"Calls",
+      link: "/calls"
     },
     {
-      item:"Sponsors",
-      link: "/sponsors"
+      item:"Submission",
+      link: "/submission"
+    },
+    {
+      item:"Schedule",
+      link: "/schedule"
     },
   ]
 
