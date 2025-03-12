@@ -105,16 +105,16 @@ function HeroSection() {
                   </div>
                 </div>
 
-                <div>
-                  <ul className="md:flex space-y-2 cursor-pointer font-semibold my-5">
+                <div className="md:flex space-y-2 cursor-pointer font-semibold my-5">
+            
                     {navItems.map((item) => (
-                      <li key={item.name} className="pl-4 pb-2 border-gray-800 border-b-1">
-                        <Link to={item.path} className="text-white">
+                    
+                        <Link to={item.path} className="text-white block pl-4 pb-2 border-gray-800 border-b-1">
                           {item.name}
                         </Link>
-                      </li>
+  
                     ))}
-                  </ul>
+            
                 </div>
               </div>
             </div>
