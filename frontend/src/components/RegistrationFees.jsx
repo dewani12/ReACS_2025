@@ -1,6 +1,6 @@
 const RegistrationFees = () => {
   return (
-    <div className="inter overflow-x-auto py-4">
+    <div className="inter overflow-x-auto py-1">
       <table className="w-full text-sm text-center border border-gray-300">
         <thead className="text-gray-900">
           <tr className="bg-[#7292D1] text-white">
@@ -36,8 +36,8 @@ const RegistrationFees = () => {
         <tbody>
           <tr className="bg-[#C3D6D0]">
             <td className="p-2 border border-white bg-[#7BCFB3] font-semibold">Presenter</td>
+            <td className="p-2 border border-white">7080</td>
             <td className="p-2 border border-white">8260</td>
-            <td className="p-2 border border-white">9440</td>
             <td className="p-2 border border-white">7434</td>
             <td className="p-2 border border-white">8496</td>
             <td className="p-2 border border-white">9440</td>

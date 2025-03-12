@@ -14,6 +14,7 @@ function HeroSection() {
     { name: "Calls", path: "/calls" },
     { name: "Submission", path: "/submission" },
     { name: "Schedule", path: "/schedule" },
+    { name: "Committee", path: "/committee" },
   ];
   
 

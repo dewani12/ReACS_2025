@@ -4,6 +4,7 @@ import HeroSection from "./HeroSection";
 import Navbar from "./Navbar";
 import RegistrationFees from "./RegistrationFees";
 import Update from "./Update";
+import Card from "./Card";
 
 export {
     Footer,
@@ -11,5 +12,6 @@ export {
     MainSection,
     Navbar,
     RegistrationFees,
-    Update
+    Update,
+    Card
 }

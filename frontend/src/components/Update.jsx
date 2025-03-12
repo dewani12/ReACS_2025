@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Update() {
   return (
-    <div className="inter px-4 md:px-12">
+    <div className="inter px-4 md:px-12 my-4 h-screen">
       <div className="text-2xl font-semibold my-2">
         It will be updated soon.
       </div>

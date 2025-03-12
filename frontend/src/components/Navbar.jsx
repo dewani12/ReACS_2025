@@ -30,16 +30,21 @@ const Navbar = () => {
       item:"Schedule",
       link: "/schedule"
     },
+    {
+      item:"Committee",
+      link: "/committee"
+    },
   ]
 
   return (
-    <nav className="inter bg-[#2769b0] shadow-sm py-2">
-      <div className="mx-auto">
-        <div className="flex justify-between  items-center px-2">
+      
+    <nav className="inter bg-[#043A75] shadow-sm px-4 md:px-12 py-4">
+      <div className="max-w-[1280px] mx-auto">
+        <div className="flex justify-between items-center">
           {/* Logo */}
-            <div className="flex items-center ml-5">
+            <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center">
-              <div className="h-15 w-50 lg:w-60 rounded-lg flex items-center justify-center">
+              <div className="rounded-lg flex items-center justify-center">
                 <Link to={"/"}>
                 <h1 className="text-3xl text-white font-bold">REACS 2025</h1>
                 </Link>
@@ -48,11 +53,11 @@ const Navbar = () => {
             </div>
 
           {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center ml-2 pr-5 space-x-1 lg:space-x-5">
+            <div className="hidden md:flex items-center space-x-1 lg:space-x-5">
 
                 {navItem.map((item) => (
 
-                <NavLink to={item.link} className={({isActive}) => `${isActive? "text-blue-800 bg-blue-300":"bg-gray-100 text-black"}  hover:bg-blue-300 hover:text-blue-800 px-4 py-2 rounded-full text-sm font-medium `}>
+                <NavLink to={item.link} className={({isActive}) => `${isActive? "text-blue-800 bg-blue-200":"bg-gray-100 text-black"}  hover:bg-blue-200 hover:text-blue-800 px-4 py-2 rounded-full text-sm font-medium `}>
                     {item.item}
                 </NavLink>
                 ))
@@ -65,7 +70,7 @@ const Navbar = () => {
             onClick={toggleMenu}
             className="inline-flex items-center justify-center p-2 rounded-md text-gray-200 hover:text-gray-900 hover:bg-gray-100 focus:outline-none"
             >
-            {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            {isOpen ? <X className="h-8 w-8" /> : <Menu className="h-8 w-8" />}
         </button>
         </div>
     </div>
