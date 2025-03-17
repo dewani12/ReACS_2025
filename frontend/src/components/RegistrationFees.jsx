@@ -23,14 +23,14 @@ const RegistrationFees = () => {
           </tr>
           <tr className="bg-[#94E4CC]">
             <th className="p-2 border border-white bg-[#7BCFB3]"></th>
-            <th className="p-2 border border-white">IAPR/IEEE-SPS</th>
-            <th className="p-2 border border-white">Non IAPR/IEEE-SPS</th>
-            <th className="p-2 border border-white">IAPR/IEEE-SPS</th>
-            <th className="p-2 border border-white">Non IAPR/IEEE-SPS</th>
-            <th className="p-2 border border-white">IAPR/IEEE-SPS</th>
-            <th className="p-2 border border-white">Non IAPR/IEEE-SPS</th>
-            <th className="p-2 border border-white">IAPR/IEEE-SPS</th>
-            <th className="p-2 border border-white">Non IAPR/IEEE-SPS</th>
+            <th className="p-2 border border-white">IEEE</th>
+            <th className="p-2 border border-white">Non IEEE</th>
+            <th className="p-2 border border-white">IEEE</th>
+            <th className="p-2 border border-white">Non IEEE</th>
+            <th className="p-2 border border-white">IEEE</th>
+            <th className="p-2 border border-white">Non IEEE</th>
+            <th className="p-2 border border-white">IEEE</th>
+            <th className="p-2 border border-white">Non IEEE</th>
           </tr>
         </thead>
         <tbody>
@@ -38,12 +38,12 @@ const RegistrationFees = () => {
             <td className="p-2 border border-white bg-[#7BCFB3] font-semibold">Presenter</td>
             <td className="p-2 border border-white">7080</td>
             <td className="p-2 border border-white">8260</td>
+            <td className="p-2 border border-white">6372</td>
+            <td className="p-2 border border-white">7434</td>
+            <td className="p-2 border border-white">8260</td>
+            <td className="p-2 border border-white">9440</td>
             <td className="p-2 border border-white">7434</td>
             <td className="p-2 border border-white">8496</td>
-            <td className="p-2 border border-white">9440</td>
-            <td className="p-2 border border-white">10620</td>
-            <td className="p-2 border border-white">8496</td>
-            <td className="p-2 border border-white">9558</td>
           </tr>
           <tr className="bg-[#C3D6D0]">
             <td className="p-2 border border-white bg-[#7BCFB3] font-semibold">Listener</td>
