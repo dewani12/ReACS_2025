@@ -4,8 +4,24 @@ function MainSection() {
     const timeLine = () => {
         const events = [
             {   
-                newDate: "March 10, 2025",
-                label: "Dates will be updated soon",
+                newDate: "20 March, 2025",
+                label: "Paper Submission Open",
+            },
+            {   
+                newDate: "15 May, 2025",
+                label: "Paper Submission Deadline",
+            },
+            {   
+                newDate: "30 June, 2025",
+                label: "Acceptance Notification",
+            },
+            {   
+                newDate: "15 July, 2025",
+                label: "Early Bird Registration Deadline",
+            },
+            {   
+                newDate: "31 July, 2025",
+                label: "Camera Ready Submission",
             },
         ];
         return (
@@ -77,7 +93,7 @@ function MainSection() {
                         {RegularTracks.map((item, index) => (
                             <div key={index} className="mt-4 md:mt-5">
                                 <div className="text-black tracking-wider text-md md:text-lg font-bold">{item.heading}</div>
-                                <div className="text-justify tracking-wide text-sm/relaxed mt-1">{item.content}</div>
+                                <div className="text-justify tracking-wider text-sm/relaxed mt-1">{item.content}</div>
                             </div>
                         ))}
                         <div className="md:hidden my-5 border-t-1 pt-6">

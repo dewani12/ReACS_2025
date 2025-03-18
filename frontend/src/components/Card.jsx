@@ -1,4 +1,4 @@
-function Card({src, name, dsgn}) {
+function Card({src, name, dsgn, email, phone}) {
     return (
       <div className="inter">
         <div className="h-24 bg-blue-200 shadow-lg rounded-sm p-2 flex items-center space-x-4 w-80">
