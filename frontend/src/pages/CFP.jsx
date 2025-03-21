@@ -1,20 +1,21 @@
 function CFP() {
     return (
         <div className="inter tracking-wide text-justify py-3 px-4 md:px-12 sm:py-4 md:py-8 max-w-[1280px] mx-auto">
-            <div>
+            <div className="pb-8">
                 <div className="text-2xl font-semibold">Call for Papers</div>
-                <div className="text-sm mt-3">
+                <div className="text-sm mt-4">
                     The present world is witnessing unprecedented advancements in the field of <span className="font-semibold">Computing and Systems</span>, with rapid technological progress transforming the way we interact, compute, analyze, and automate. To foster academic and industry collaboration and to showcase the latest breakthroughs, the <span className="font-semibold">International Conference on Recent Advances in Computing and Systems (REACS 2025)</span> is being organized by the <span className="font-semibold">Department of Computer Science and Engineering, Atal Bihari Vajpayee Indian Institute of Information Technology and Management (ABV-IIITM), Gwalior, Madhya Pradesh, India.</span>
                 </div>
-                <div className="text-sm mt-3">
+                <div className="text-sm mt-4">
                     REACS 2025 aims to serve as a vibrant platform for the dissemination of high-quality research and innovation in the wide domain of <span className="font-semibold">Computer Science and Engineering</span>, bringing together leading researchers, academicians, industry professionals, and students from around the globe. The conference will provide a unique opportunity to present and discuss the most recent innovations, trends, challenges, and solutions in various specialized tracks.
                 </div>
-                <div className="text-sm mt-3">
+                <div className="text-sm mt-4">
                     The conference will emphasize active participation from <span className="font-semibold">PhD scholars, postdoctoral researchers, early-career scientists</span>, and professionals, offering a space for <span className="font-semibold">collaborative discussion, knowledge exchange, and networking.</span> The conference will also feature <span className="font-semibold">keynote talks by eminent speakers</span> from academia and industry in the respective domains.
                 </div>
             </div>
-            <div className="mt-12">
-                <div className="text-2xl font-semibold">Paper Submission Instructions</div>
+            <hr />
+            <div className="py-8">
+                <div className="text-xl md:text-2xl font-semibold">Paper Submission Instructions</div>
                 <div className="text-sm mt-3">
                     Prospective authors are invited to submit <span className="font-semibold">original, high-quality, and unpublished research papers</span> to the <span className="font-semibold">International Conference on Recent Advances in Computing and Systems (REACS 2025).</span> By submitting a manuscript to REACS 2025, authors confirm that the work is not simultaneously submitted or published elsewhere (in a journal, conference, or workshop). Any paper found violating this policy will be rejected without review.
                 </div>
@@ -45,7 +46,7 @@ function CFP() {
                     <div className="text-2xl font-bold">Manuscript Templates</div>
                     <div className="mt-3 text-sm">
                         Authors must prepare their manuscripts using the <span className="font-bold">IEEE conference templates.</span> Templates for <span className="font-bold">MS Word, LaTeX, and Overleaf</span> are available at the following links:
-                        <ul className="my-3 list-disc ml-6 text-[12px]">
+                        <ul className="my-3 list-disc ml-6">
                             <li><a href="https://www.ieee.org/conferences/publishing/templates.html" className="text-blue-600 underline">IEEE Word Template</a></li>
                             <li><a href="https://www.ieee.org/conferences/publishing/templates.html" className="text-blue-600 underline">IEEE LaTeX Template</a></li>
                             <li>IEEE Overleaf Template</li>
