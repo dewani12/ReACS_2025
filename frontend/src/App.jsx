@@ -3,7 +3,7 @@ import Home from "./pages/Home"
 import Registration from "./pages/Registration"
 import Schedule from "./pages/Schedule"
 import Submission from "./pages/Submission"
-import Calls from "./pages/Calls"
+import CFP from "./pages/CFP"
 import { Layout1 } from "./layouts"
 import Committee from "./pages/Committee"
 
@@ -16,7 +16,7 @@ function App() {
           <Route path="/registration" element={<Registration />} />
           <Route path="/schedule" element={<Schedule />} />
           <Route path="/submission" element={<Submission />} />
-          <Route path="/calls" element={<Calls />} />
+          <Route path="/cfp" element={<CFP />} />
           <Route path="/committee" element={<Committee />} />
           </Route>
 
