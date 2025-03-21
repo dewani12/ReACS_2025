@@ -15,6 +15,7 @@ function App() {
           <Route path="/registration" element={<Registration />} />
           <Route path="/schedule" element={<Schedule />} />
           <Route path="/submission" element={<Submission />} />
+          
           <Route path="/cfp" element={<CFP />} />
           <Route path="/committee" element={<Committee />} />
       </Routes>
