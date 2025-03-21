@@ -1,4 +1,4 @@
-import { Card } from "../components/index.js";
+import { Card, Footer, Navbar } from "../components/index.js";
 
 const committeeData = [
   { title: "Patrons", members: [
@@ -47,6 +47,8 @@ const committeeData = [
 
 function Committee() {
   return (
+    <>
+    <Navbar/>
     <div className="inter py-4 px-4">
       {committeeData.map((section, index) => (
         <div key={index} className="flex flex-col items-center mb-12">
@@ -61,6 +63,8 @@ function Committee() {
         </div>
       ))}
     </div>
+    <Footer/>
+    </>
   );
 }
 

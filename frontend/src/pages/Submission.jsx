@@ -1,5 +1,9 @@
+import { Footer, Navbar } from "../components"
+
 function Submission() {
   return (
+    <>
+    <Navbar/>
     <div>
       <div className="inter tracking-wide text-justify py-3 px-4 md:px-12 sm:py-4 md:py-8 max-w-[1280px] mx-auto">
         <div className="pb-8">
@@ -42,6 +46,8 @@ function Submission() {
         </div>
       </div>
     </div>
+    <Footer/>
+    </>
   )
 }
 
