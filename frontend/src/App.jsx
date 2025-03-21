@@ -9,19 +9,18 @@ import Committee from "./pages/Committee"
 
 function App() {
   return (
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="" element={<Layout1/>}>
-          <Route path="/registration" element={<Registration />} />
-          <Route path="/schedule" element={<Schedule />} />
-          <Route path="/submission" element={<Submission />} />
-          <Route path="/cfp" element={<CFP />} />
-          <Route path="/committee" element={<Committee />} />
-          </Route>
-
-        </Routes>
-      </BrowserRouter>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Layout1 />}>
+          <Route path="registration" element={<Registration />} />
+          <Route path="schedule" element={<Schedule />} />
+          <Route path="submission" element={<Submission />} />
+          <Route path="cfp" element={<CFP />} />
+          <Route path="committee" element={<Committee />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 

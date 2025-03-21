@@ -3,8 +3,8 @@ import MainSection from "./MainSection";
 import HeroSection from "./HeroSection";
 import Navbar from "./Navbar";
 import RegistrationFees from "./RegistrationFees";
-import Update from "./Update";
 import Card from "./Card";
+import Timeline from "./Timeline";
 
 export {
     Footer,
@@ -12,6 +12,6 @@ export {
     MainSection,
     Navbar,
     RegistrationFees,
-    Update,
-    Card
+    Card,
+    Timeline
 }

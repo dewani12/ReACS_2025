@@ -1,50 +1,7 @@
+import { Timeline } from "."
+import TimeLine from "./Timeline"
 
 function MainSection() {
-
-    const timeLine = () => {
-        const events = [
-            {   
-                newDate: "20 March, 2025",
-                label: "Paper Submission Open",
-            },
-            {   
-                newDate: "15 May, 2025",
-                label: "Paper Submission Deadline",
-            },
-            {   
-                newDate: "30 June, 2025",
-                label: "Acceptance Notification",
-            },
-            {   
-                newDate: "15 July, 2025",
-                label: "Early Bird Registration Deadline",
-            },
-            {   
-                newDate: "31 July, 2025",
-                label: "Camera Ready Submission",
-            },
-        ];
-        return (
-            <div>
-                <div className="text-2xl md:text-3xl heading-cl font-bold mb-3">Important Dates</div>
-                <div className="border-l-3 py-1 border-[#0054B0] relative">
-                    {events.map((event, index) => (
-                        <div key={index} className="text-sm my-8 pl-5 relative">
-                            <div className="absolute -left-2 top-1 w-4 h-4 bg-[#0054B0] rounded-full flex items-center justify-center">
-                                <span className="bg-black w-3 h-3 rounded-full"></span>
-                            </div>
-                            {event.oldDate && (
-                                <p className="text-red-500 line-through decoration-2 font-bold">{event.oldDate}</p>
-                            )}
-                            <p className="text-[#0054B0] font-bold">{event.newDate}</p>
-                            <p className="font-bold">{event.label}</p>
-                        </div>
-                    ))}
-                </div>
-            </div>
-        )
-    }
-
     const RegularTracks = [
         {
             heading: "Track 1: Vision Computing:",
@@ -97,12 +54,14 @@ function MainSection() {
                             </div>
                         ))}
                         <div className="md:hidden my-5 border-t-1 pt-6">
-                            {timeLine()}
+                            <div className="text-2xl md:text-3xl heading-cl font-bold mb-3">Important Dates</div>
+                            <Timeline />
                         </div>
                     </div>
                 </div>
                 <div className="max-md:hidden w-[30%]">
-                    {timeLine()}
+                    <div className="text-2xl md:text-3xl heading-cl font-bold mb-3">Important Dates</div>
+                    <TimeLine />
                 </div>
             </div>
 
