@@ -9,7 +9,7 @@ function Submission() {
           <div className="pb-8">
             <div className="text-xl md:text-2xl font-semibold">Paper Submission Instructions</div>
             <div className="text-sm mt-3">
-              Prospective authors are invited to submit <span className="font-semibold">original, high-quality, and unpublished research papers</span> to the <span className="font-semibold">International Conference on Recent Advances in Computing and Systems (REACS 2025).</span> By submitting a manuscript to REACS 2025, authors confirm that the work is not simultaneously submitted or published elsewhere (in a journal, conference, or workshop). Any paper found violating this policy will be rejected without review.
+              Prospective authors are invited to submit <span className="font-semibold">original, high-quality, and unpublished research papers</span> to the <span className="font-semibold">2025 IEEE International Conference on Recent Advances in Computing and Systems (REACS 2025).</span> By submitting a manuscript to REACS 2025, authors confirm that the work is not simultaneously submitted or published elsewhere (in a journal, conference, or workshop). Any paper found violating this policy will be rejected without review.
             </div>
             <div className="text-sm mt-3">
               Papers not compliant with the IEEE template including appropriate referencing or exceeding the page limit will be returned without review. Only original papers that have not been published or submitted for publication elsewhere will be considered. The paper must clearly indicate the research area, main results, and contributions.
