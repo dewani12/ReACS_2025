@@ -5,6 +5,7 @@ import Navbar from "./Navbar";
 import RegistrationFees from "./RegistrationFees";
 import Card from "./Card";
 import Timeline from "./Timeline";
+import LogoSection from "./LogoSection";
 
 export {
     Footer,
@@ -13,5 +14,6 @@ export {
     Navbar,
     RegistrationFees,
     Card,
-    Timeline
+    Timeline,
+    LogoSection
 }

@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import { Footer, Navbar } from "../components"
+import { Upload } from 'lucide-react';
 
 function Submission() {
   return (
@@ -51,9 +53,15 @@ function Submission() {
               <div className="text-2xl font-bold">Submission Portal</div>
               <div className="mt-3 text-sm">
                 All manuscripts must be submitted electronically through the <span className="font-bold">REACS 2025 submission portal.</span>
-                <div className="font-bold">
-                  [CMT submission link will be coming shortly]
-                </div>
+                  <a
+                    href=" https://cmt3.research.microsoft.com/ReACS2025/"
+                    className="flex items-center w-fit gap-2 hover:bg-blue-200 hover:text-blue-800 bg-[#043A75] text-white mt-2 px-6 py-3 rounded-full transition-colors"
+                  >
+                    <Upload className="w-4 h-4" />
+                    <span className="font-semibold">
+                      Upload
+                    </span>
+                  </a>
               </div>
               <div className="text-sm mt-4">
                 Authors submitting to <span className="font-bold">Special Tracks or Sessions</span> must select the relevant subject area during submission. Such papers will be directed to the respective <span className="font-bold">Session Chairs</span> for review and evaluation.
