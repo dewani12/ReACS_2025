@@ -1,7 +1,7 @@
 import { Card, Footer, Navbar } from "../components/index.js";
 
 const committeeData = [
-  { title: "Patrons", members: [
+  { title: "Patron", members: [
     { src: "http://iiitm.ac.in/images/demo/teachers/1650440085_Prof.-Sri-Niwas-Singh.jpg", name: "Prof. S. N. Singh", dsgn: "Director, ABV-IIITM, India" }
   ]},
   { title: "General Chairs", members: [

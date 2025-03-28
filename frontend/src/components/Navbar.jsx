@@ -31,7 +31,7 @@ const Navbar = () => {
             <div className="flex-shrink-0 flex items-center">
               <div className="rounded-lg flex items-center justify-center">
                 <Link to={"/"}>
-                <h1 className="text-3xl text-white font-bold">REACS 2025</h1>
+                <h1 className="text-3xl text-white font-bold">ReACS 2025</h1>
                 </Link>
               </div>
             </div> 
@@ -67,7 +67,6 @@ const Navbar = () => {
                 isOpen ? 'translate-x-0' : 'translate-x-full'
               } w-64 bg-black shadow-lg text-white overflow-y-auto transition-transform duration-300 ease-in-out md:hidden`}
             >
-              
               <div className='flex justify-end mt-7 mr-4'>
         <button 
             onClick={toggleMenu}
@@ -80,7 +79,7 @@ const Navbar = () => {
                 <div className="flex items-center justify-between my-6">
                   <div className="flex items-center">
                     <div className="pl-4 rounded-lg flex items-center justify-center">
-                      <Link to="/" className="text-3xl font-bold">REACS 2025</Link>
+                      <Link to="/" className="text-3xl font-bold">ReACS 2025</Link>
                     </div>
                   </div>
                 </div>

@@ -11,7 +11,7 @@ function Submission() {
           <div className="pb-8">
             <div className="text-xl md:text-2xl font-semibold">Paper Submission Instructions</div>
             <div className="text-sm mt-3">
-              Prospective authors are invited to submit <span className="font-semibold">original, high-quality, and unpublished research papers</span> to the <span className="font-semibold">2025 IEEE International Conference on Recent Advances in Computing and Systems (REACS 2025).</span> By submitting a manuscript to REACS 2025, authors confirm that the work is not simultaneously submitted or published elsewhere (in a journal, conference, or workshop). Any paper found violating this policy will be rejected without review.
+              Prospective authors are invited to submit <span className="font-semibold">original, high-quality, and unpublished research papers</span> to the <span className="font-semibold">2025 IEEE International Conference on Recent Advances in Computing and Systems (ReACS 2025).</span> By submitting a manuscript to ReACS 2025, authors confirm that the work is not simultaneously submitted or published elsewhere (in a journal, conference, or workshop). Any paper found violating this policy will be rejected without review.
             </div>
             <div className="text-sm mt-3">
               Papers not compliant with the IEEE template including appropriate referencing or exceeding the page limit will be returned without review. Only original papers that have not been published or submitted for publication elsewhere will be considered. The paper must clearly indicate the research area, main results, and contributions.
@@ -32,7 +32,7 @@ function Submission() {
             <div className="py-8">
               <div className="text-2xl font-bold">Conference Proceedings</div>
               <div className="mt-3 text-sm">
-                The <span className="font-bold">proceedings of REACS 2025 will be published by IEEE</span> (approval under process). All accepted and presented papers will be submitted to <span className="font-bold">IEEE Xplore,</span> which is indexed with world’s leading Abstracting & Indexing (A&I) databases (SCOPUS etc.) subject to meeting <span className="font-bold">IEEE’s quality and scope requirements.</span> Papers accepted for presentation but <span className="font-bold">not presented at the conference (no-show)</span> will <span className="font-bold">not be included in the final proceedings.</span>
+                The <span className="font-bold">proceedings of ReACS 2025 will be published by IEEE</span> (approval under process). All accepted and presented papers will be submitted to <span className="font-bold">IEEE Xplore,</span> which is indexed with world’s leading Abstracting & Indexing (A&I) databases (SCOPUS etc.) subject to meeting <span className="font-bold">IEEE’s quality and scope requirements.</span> Papers accepted for presentation but <span className="font-bold">not presented at the conference (no-show)</span> will <span className="font-bold">not be included in the final proceedings.</span>
               </div>
             </div>
             <hr />
@@ -43,7 +43,7 @@ function Submission() {
                 <ul className="my-3 list-disc ml-6">
                   <li><a href="https://www.ieee.org/conferences/publishing/templates.html" className="text-blue-600 underline">IEEE Word Template</a></li>
                   <li><a href="https://www.ieee.org/conferences/publishing/templates.html" className="text-blue-600 underline">IEEE LaTeX Template</a></li>
-                  <li>IEEE Overleaf Template</li>
+                  <li><a href="https://www.overleaf.com/latex/templates/ieee-conference-template/grfzhhncsfqn" className="text-blue-600 underline">IEEE Overleaf Template</a></li>
                 </ul>
                 Please refer to the <span className="font-bold">IEEE Author Guidelines</span> for detailed instructions on formatting, structuring, headings, figures, tables, and references.
               </div>
@@ -52,9 +52,9 @@ function Submission() {
             <div className="pt-8">
               <div className="text-2xl font-bold">Submission Portal</div>
               <div className="mt-3 text-sm">
-                All manuscripts must be submitted electronically through the <span className="font-bold">REACS 2025 submission portal.</span>
+                All manuscripts must be submitted electronically through the <span className="font-bold">ReACS 2025 submission portal.</span>
                   <a
-                    href=" https://cmt3.research.microsoft.com/ReACS2025/"
+                    href="https://cmt3.research.microsoft.com/ReACS2025/"
                     className="flex items-center w-fit gap-2 hover:bg-blue-200 hover:text-blue-800 bg-[#043A75] text-white mt-2 px-6 py-3 rounded-full transition-colors"
                   >
                     <Upload className="w-4 h-4" />

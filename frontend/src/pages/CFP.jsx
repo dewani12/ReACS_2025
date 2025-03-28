@@ -8,7 +8,7 @@ function CFP() {
             <div className="pb-8">
                 <div className="text-2xl font-semibold">Call for Papers</div>
                 <div className="text-sm mt-4">
-                    The present world is witnessing unprecedented advancements in the field of <span className="font-semibold">Computing and Systems</span>, with rapid technological progress transforming the way we interact, compute, analyze, and automate. To foster academic and industry collaboration and to showcase the latest breakthroughs, the <span className="font-semibold">2025 IEEE International Conference on Recent Advances in Computing and Systems (REACS 2025)</span> is being organized by the <span className="font-semibold">Department of Computer Science and Engineering, Atal Bihari Vajpayee Indian Institute of Information Technology and Management (ABV-IIITM), Gwalior, Madhya Pradesh, India.</span>
+                    The present world is witnessing unprecedented advancements in the field of <span className="font-semibold">Computing and Systems</span>, with rapid technological progress transforming the way we interact, compute, analyze, and automate. To foster academic and industry collaboration and to showcase the latest breakthroughs, the <span className="font-semibold">2025 IEEE International Conference on Recent Advances in Computing and Systems (ReACS 2025)</span> is being organized by the <span className="font-semibold">Department of Computer Science and Engineering, Atal Bihari Vajpayee Indian Institute of Information Technology and Management (ABV-IIITM), Gwalior, Madhya Pradesh, India.</span>
                 </div>
                 <div className="text-sm mt-4">
                     REACS 2025 aims to serve as a vibrant platform for the dissemination of high-quality research and innovation in the wide domain of <span className="font-semibold">Computer Science and Engineering</span>, bringing together leading researchers, academicians, industry professionals, and students from around the globe. The conference will provide a unique opportunity to present and discuss the most recent innovations, trends, challenges, and solutions in various specialized tracks.
@@ -22,7 +22,7 @@ function CFP() {
                 <div className="pb-8">
                     <div className="text-2xl font-bold">Conference Proceedings</div>
                     <div className="mt-3 text-sm">
-                        The <span className="font-bold">proceedings of REACS 2025 will be published by IEEE</span> (approval under process). All accepted and presented papers will be submitted to <span className="font-bold">IEEE Xplore,</span> which is indexed with world’s leading Abstracting & Indexing (A&I) databases (SCOPUS etc.) subject to meeting <span className="font-bold">IEEE’s quality and scope requirements.</span> Papers accepted for presentation but <span className="font-bold">not presented at the conference (no-show)</span> will <span className="font-bold">not be included in the final proceedings.</span>
+                        The <span className="font-bold">proceedings of ReACS 2025 will be published by IEEE</span> (approval under process). All accepted and presented papers will be submitted to <span className="font-bold">IEEE Xplore,</span> which is indexed with world’s leading Abstracting & Indexing (A&I) databases (SCOPUS etc.) subject to meeting <span className="font-bold">IEEE’s quality and scope requirements.</span> Papers accepted for presentation but <span className="font-bold">not presented at the conference (no-show)</span> will <span className="font-bold">not be included in the final proceedings.</span>
                     </div>
                 </div>
                 <hr />
@@ -33,7 +33,7 @@ function CFP() {
                         <ul className="my-3 list-disc ml-6">
                             <li><a href="https://www.ieee.org/conferences/publishing/templates.html" className="text-blue-600 underline">IEEE Word Template</a></li>
                             <li><a href="https://www.ieee.org/conferences/publishing/templates.html" className="text-blue-600 underline">IEEE LaTeX Template</a></li>
-                            <li>IEEE Overleaf Template</li>
+                            <li><a href="https://www.overleaf.com/latex/templates/ieee-conference-template/grfzhhncsfqn" className="text-blue-600 underline">IEEE Overleaf Template</a></li>
                         </ul>
                         Please refer to the <span className="font-bold">IEEE Author Guidelines</span> for detailed instructions on formatting, structuring, headings, figures, tables, and references.
                     </div>

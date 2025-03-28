@@ -40,8 +40,9 @@ function MainSection() {
     return (
         <div className="inter primary-bg text-cl py-2 px-4 md:px-12 sm:py-4 md:py-8 max-w-[1280px] mx-auto">
             <div className="mb-6 pb-4 border-b-1">
-                <div className="heading-cl text-3xl md:text-4xl tracking-normal font-bold">Welcome to REACS 2025</div>
-                <div className="text-sm/relaxed mt-4 tracking-wide text-justify"><span className="font-semibold">Welcome to the 2025 IEEE International Conference on Recent Advances in Computing and Systems (REACS2025) is being organised by the Department of CSE, ABV-IIITM</span>, to functionalize it as a platform for dissemination of recent high-quality research work in the domain of Computing and Systems. This conference covers the wide domain of Computer Science and Engineering and will provide a means to exchange innovative ideas and recent advances among researchers from academia and industry.</div>
+                <div className="heading-cl text-3xl md:text-4xl tracking-normal font-bold">Welcome to ReACS 2025</div>
+                <div className="text-sm/relaxed mt-4 tracking-wide text-justify"><span className="font-semibold">Welcome to the 2025 IEEE International Conference on Recent Advances in Computing and Systems (ReACS2025) is being organised by the Department of CSE, ABV-IIITM</span>, to functionalize it as a platform for dissemination of recent high-quality research work in the domain of Computing and Systems. This conference covers the wide domain of Computer Science and Engineering and will provide a means to exchange innovative ideas and recent advances among researchers from academia and industry.</div>
+                <div className="mt-2 font-semibold">IEEE Conference ID: 67479</div>
             </div>
             <div className="flex md:space-x-8">
                 <div className="md:w-[70%]">

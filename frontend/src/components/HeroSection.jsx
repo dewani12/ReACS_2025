@@ -100,7 +100,7 @@ function HeroSection() {
                 <div className="flex items-center justify-between mt-20 my-6">
                   <div className="flex items-center">
                     <div className="pl-4 rounded-lg flex items-center justify-center">
-                      <h1 className="text-3xl font-bold">REACS 2025</h1>
+                      <h1 className="text-3xl font-bold">ReACS 2025</h1>
                     </div>
                   </div>
                 </div>

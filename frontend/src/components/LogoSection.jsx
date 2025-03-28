@@ -17,17 +17,15 @@ const logos = [
 
 function LogoSection() {
   return (
-     
     <div className="py-8 bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
         <div className="mt-2 flex justify-center items-center gap-16">
           {logos.map((logo, index) => (
             <div
               key={index}
               className=""
             >
-              <img 
+              <img
                 src={logo.imageUrl}
                 alt={logo.alt}
                 className="h-44 w-auto object-contain"
