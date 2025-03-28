@@ -61,7 +61,7 @@ function HeroSection() {
         {/* Hero Content */}
         <div className="relative max-w-7xl text-justify mx-auto px-4 py-28 sm:py-30 md:py-46 sm:px-6 lg:px-4">
           <h1 className="text-3xl md:text-4xl font-extrabold tracking-normal text-white sm:text-3xl lg:text-6xl text-center">
-            REACS 2025
+            ReACS 2025
           </h1>
           <p className="mt-6 text-md tracking-wider md:text-xl text-white text-center max-w-4xl mx-auto font-semibold">
             2025 IEEE International Conference on Recent Advances in Computing and Systems

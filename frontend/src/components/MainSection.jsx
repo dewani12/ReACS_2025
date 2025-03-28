@@ -1,7 +1,5 @@
 import { Timeline } from "."
 import TimeLine from "./Timeline"
-import ieee from "../assets/ieee.png"
-import iiitm from "../assets/iiitm.png"
 
 function MainSection() {
     const RegularTracks = [
