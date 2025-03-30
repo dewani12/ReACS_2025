@@ -1,4 +1,4 @@
-import { Card, Footer, Navbar } from "../components/index.js";
+import { Card, Footer, Header, Navbar } from "../components/index.js";
 
 const committeeData = [
   {
@@ -68,6 +68,7 @@ const committeeData = [
 function Committee() {
   return (
     <>
+    <Header/>
       <Navbar />
       <div className="inter py-4 px-4">
         {committeeData.map((section, index) => (
@@ -90,7 +91,7 @@ function Committee() {
               { track: "Track-3", name: "Dr. Deepak Kumar Dewangan" },
               { track: "Track-4", name: "Dr. Debanjan Sadhya" },
               { track: "Track-5", name: "Dr. Chittaranjan Swain" },
-              { track: "Track-6", name: "Dr. W. Wilfred Godfrey" },
+              { track: "Track-6", name: "Dr. Wilfred G Godfrey" },
               { track: "Track-7", name: "Dr. Santosh Singh Rathore" },
               { track: "Track-8", name: "Dr. Avadh Kishor" },
             ].map((item, index) => (

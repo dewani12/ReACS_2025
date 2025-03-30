@@ -1,8 +1,9 @@
-import { Navbar, Footer } from "../components"
+import { Navbar, Footer, Header } from "../components"
 
 function CFP() {
     return (
         <>
+        <Header/>
         <Navbar/>
         <div className="inter tracking-wide text-justify py-3 px-4 md:px-12 sm:py-4 md:py-8 max-w-[1280px] mx-auto">
             <div className="pb-8">
