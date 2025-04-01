@@ -65,43 +65,86 @@ const committeeData = [
   }
 ];
 
+const trackChairs = [
+  {
+    title: "Track 1",
+    members: [
+      { src: "https://www.iiitm.ac.in/images/demo/teachers/1680515973_nsp3.jpg", name: "Dr. Narinder Singh Punn", dsgn: "ABV-IIITM, India" },
+    ]
+  },
+  {
+    title: "Track 2",
+    members: [
+      { src: "https://www.iiitm.ac.in/images/demo/teachers/1533546077_drsaumya.jpg", name: "Dr. Saumya Bhadauria", dsgn: "ABV-IIITM, India" },
+    ]
+  },
+  {
+    title: "Track 3",
+    members: [
+      { src: "https://www.iiitm.ac.in/images/demo/teachers/1690364914_DD%20-%20Copy-fotor-bg-remover-2023072610251.png", name: "Dr. Deepak Kumar Dewangan", dsgn: "ABV-IIITM, India" },
+    ]
+  },
+  {
+    title: "Track 4",
+    members: [
+      { src: "https://www.iiitm.ac.in/images/demo/teachers/1554378514_DSC_3785.JPG", name: "Dr. Debanjan Sadhya", dsgn: "ABV-IIITM, India" },
+    ]
+  },
+  {
+    title: "Track 5",
+    members: [
+      { src: "https://www.iiitm.ac.in/images/New-Photo.jpg", name: "Dr. Chittaranjan Swain", dsgn: "ABV-IIITM, India" }
+    ]
+  },
+  {
+    title: "Track 6",
+    members: [
+      { src: "https://www.iiitm.ac.in/images/demo/teachers/1533544986_godfrey_pic.jpg", name: "Dr. Wilfred G Godfrey", dsgn: "ABV-IIITM, India" },
+    ]
+  },
+  {
+    title: "Track 7",
+    members: [
+      { src: "https://www.iiitm.ac.in/images/demo/teachers/1601567414_IMG_20201001_171900.jpg", name: "Dr. Santosh Singh Rathore", dsgn: "ABV-IIITM, India" },
+    ]
+  },
+  {
+    title: "Track 8",
+    members: [
+      { src: "https://www.iiitm.ac.in/images/demo/teachers/1677497918_AvadhKishor.jpg", name: "Dr. Avadh Kishor", dsgn: "ABV-IIITM, India" },
+    ]
+  },
+
+];
+
 function Committee() {
   return (
     <>
-    <Header/>
       <Navbar />
       <div className="inter py-4 px-4">
         {committeeData.map((section, index) => (
           <div key={index} className="flex flex-col items-center mb-12">
             <div className="text-3xl mb-4">{section.title}</div>
-            <div className={`${section.members.length >= 4 ? "grid grid-cols-1 md:grid-cols-2 gap-4 justify-center" : "flex flex-wrap justify-center gap-4"
-              }`}>
+            <div className={`${section.members.length >= 4 ? "grid grid-cols-1 md:grid-cols-2 gap-4 justify-center" : "flex flex-wrap justify-center gap-4"}`}>
               {section.members.map((member, i) => (
                 <Card key={i} src={member.src} name={member.name} dsgn={member.dsgn} />
               ))}
             </div>
           </div>
         ))}
-        <div className="px-4 mb-5 md:px-12 max-w-[1280px] mx-auto">
-          <div className="text-3xl text-center mb-4">Track Chairs</div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-sm">
-            {[
-              { track: "Track-1", name: "Dr. Narinder Singh Punn" },
-              { track: "Track-2", name: "Dr. Saumya Bhadauria" },
-              { track: "Track-3", name: "Dr. Deepak Kumar Dewangan" },
-              { track: "Track-4", name: "Dr. Debanjan Sadhya" },
-              { track: "Track-5", name: "Dr. Chittaranjan Swain" },
-              { track: "Track-6", name: "Dr. Wilfred G Godfrey" },
-              { track: "Track-7", name: "Dr. Santosh Singh Rathore" },
-              { track: "Track-8", name: "Dr. Avadh Kishor" },
-            ].map((item, index) => (
-              <div key={index} className="p-2 bg-blue-200 rounded-lg shadow-sm">
-                <span className="font-semibold">{item.track}:</span> {item.name}
-              </div>
-            ))}
+      </div>
+      <div className="inter px-4 mb-5 md:px-12 max-w-[1280px] mx-auto">
+        <div className="text-3xl text-center mb-3">Track Chairs</div>
+        {trackChairs.map((track, index) => (
+          <div key={index} className="flex flex-col items-center mb-6">
+            <div className="text-xl mb-2">{track.title}</div>
+            <div className={`${track.members.length >= 4 ? "grid grid-cols-1 md:grid-cols-2 gap-4 justify-center" : "flex flex-wrap justify-center gap-4"}`}>
+              {track.members.map((member, i) => (
+                <Card key={i} src={member.src} name={member.name} dsgn={member.dsgn} />
+              ))}
+            </div>
           </div>
-        </div>
-
+        ))}
       </div>
       <Footer />
     </>

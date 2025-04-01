@@ -1,9 +1,11 @@
+import { Download } from "lucide-react"
 import { Navbar, Footer, Header } from "../components"
+import CFP_BROCHURE from "./../assets/CFP_BROCHURE.pdf"
 
 function CFP() {
     return (
         <>
-        <Header/>
+        {/* <Header/> */}
         <Navbar/>
         <div className="inter tracking-wide text-justify py-3 px-4 md:px-12 sm:py-4 md:py-8 max-w-[1280px] mx-auto">
             <div className="pb-8">
@@ -16,6 +18,17 @@ function CFP() {
                 </div>
                 <div className="text-sm mt-4">
                     The conference will emphasize active participation from <span className="font-semibold">PhD scholars, postdoctoral researchers, early-career scientists</span>, and professionals, offering a space for <span className="font-semibold">collaborative discussion, knowledge exchange, and networking.</span> The conference will also feature <span className="font-semibold">keynote talks by eminent speakers</span> from academia and industry in the respective domains.
+                </div>
+                <div className="mt-5">
+                <a
+                    href={CFP_BROCHURE}
+                    className="flex items-center w-fit gap-2 hover:bg-blue-200 hover:text-blue-800 bg-[#043A75] text-white mt-2 px-6 py-3 rounded-full transition-colors"
+                  >
+                    <Download className="w-4 h-4" />
+                    <span className="font-semibold text-sm">
+                      Download
+                    </span>
+                  </a>
                 </div>
             </div>
             <hr />
