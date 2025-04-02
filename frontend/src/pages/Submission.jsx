@@ -60,7 +60,7 @@ function Submission() {
                   >
                     <Upload className="w-4 h-4" />
                     <span className="font-semibold">
-                      Upload
+                      Submit Here
                     </span>
                   </a>
               </div>

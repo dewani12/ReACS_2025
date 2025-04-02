@@ -4,7 +4,7 @@ function Home() {
     return (
         <>  
             <HeroSection />
-            <LogoSection/>
+          
             <MainSection/>
             <Footer />
         </>

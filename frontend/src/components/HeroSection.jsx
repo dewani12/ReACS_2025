@@ -2,6 +2,10 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import img1 from "./../assets/collegeImg1.svg"
 import img2 from "./../assets/collegeImg2.svg"
+import ReACE_logo from "./../assets/ReACE_logo.png"
+import ieee_logo from "./../assets/ieee_logo.png"
+import ieee from "./../assets/ieee.png"
+import iiit_logo from "./../assets/iiit.png"
 import { Menu, X } from 'lucide-react';
 
 function HeroSection() {
@@ -41,11 +45,11 @@ function HeroSection() {
             className={`absolute inset-0 ${index === currentSlide ? 'opacity-100' : 'opacity-0'}`}
           >
             <img
-              className="w-full h-[400px] sm:h-[400px] md:h-[600px] object-cover"
+              className="w-full h-[400px] sm:h-[400px] md:h-[650px] object-cover"
               src={slide}
               alt="library image"
             />
-            <div className="absolute h-[400px] sm:h-[400px] md:h-[600px] inset-0 bg-gradient-to-b from-black/60 to-black/40" />
+            <div className="absolute h-[400px] sm:h-[400px] md:h-[650px] inset-0 bg-gradient-to-b from-black/50 to-black/20" />
           </div>
         ))}
 
@@ -59,7 +63,12 @@ function HeroSection() {
         </div>
 
         {/* Hero Content */}
-        <div className="relative max-w-7xl text-justify mx-auto px-4 py-28 sm:py-30 md:py-46 sm:px-6 lg:px-4">
+        <div className="relative max-w-7xl text-justify mx-auto px-10 pt-10 sm:pt-10 md:pt-28 lg:pt-32">
+        {/* <img 
+                  src={ieee} 
+                  alt="IIIT Logo" 
+                  className=" h-auto object-contain p-1.5 sm:p-2 md:p-2.5 transition-transform hover:scale-105"
+                /> */}
           <h1 className="text-3xl md:text-4xl font-extrabold tracking-normal text-white sm:text-3xl lg:text-6xl text-center">
             ReACS 2025
           </h1>
@@ -127,6 +136,25 @@ function HeroSection() {
               ></div>
             )}
           </nav>
+          <div className=" md:mt-10">
+              <div className="flex justify-center items-center px-4">
+                <img 
+                  src={ieee_logo} 
+                  alt="ReACE Logo" 
+                  className="w-[100px] sm:w-[180px] lg:w-[250px] h-auto object-contain p-1.5 sm:p-2 md:p-2.5 transition-transform hover:scale-105"
+                />
+                <img 
+                  src={iiit_logo} 
+                  alt="IEEE Logo" 
+                  className="h-[100px] sm:h-[180px] lg:h-48 w-auto object-contain p-1.5 sm:p-2 md:p-2.5 transition-transform hover:scale-105"
+                />
+                <img 
+                  src={ieee} 
+                  alt="IIIT Logo" 
+                  className="w-[100px] sm:w-[180px] lg:w-[250px] h-auto object-contain p-1.5 sm:p-2 md:p-2.5 transition-transform hover:scale-105"
+                />
+              </div>
+            </div>
         </div>
       </div>
     </div>
