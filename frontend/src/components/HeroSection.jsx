@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import img1 from "./../assets/collegeImg1.svg"
 import img2 from "./../assets/collegeImg2.svg"
-import ReACE_logo from "./../assets/ReACE_logo.png"
 import ieee_logo from "./../assets/ieee_logo.png"
 import ieee from "./../assets/ieee.png"
 import iiit_logo from "./../assets/iiit.png"
@@ -19,6 +18,7 @@ function HeroSection() {
     { name: "Submission", path: "/submission" },
     { name: "Schedule", path: "/schedule" },
     { name: "Committee", path: "/committee" },
+    { name: "About", path: "/about" },
   ];
   
 

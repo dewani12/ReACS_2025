@@ -6,10 +6,12 @@ import Submission from "./pages/Submission"
 import CFP from "./pages/CFP"
 import { Layout1 } from "./layouts"
 import Committee from "./pages/Committee"
-
+import About from "./pages/About"
+import ScrollToTop from "./components/ScrollToTop"
 function App() {
   return (
     <BrowserRouter>
+    <ScrollToTop/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/registration" element={<Registration />} />
@@ -17,6 +19,7 @@ function App() {
         <Route path="/submission" element={<Submission />} />
         <Route path="/cfp" element={<CFP />} />
         <Route path="/committee" element={<Committee />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </BrowserRouter>
   )
