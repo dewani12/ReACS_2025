@@ -19,6 +19,8 @@ const Navbar = () => {
     { name: "Submission", path: "/submission" },
     { name: "Schedule", path: "/schedule" },
     { name: "Committee", path: "/committee" },
+    { name: "About", path: "/about" },
+
   ];
 
   useEffect(() => setIsOpen(false), [pathname]);

@@ -1,7 +1,41 @@
 import { Download } from "lucide-react"
-import { Navbar, Footer, Header } from "../components"
+import { Navbar, Footer } from "../components"
 
 function CFP() {
+    const RegularTracks = [
+        {
+            heading: "Track 1: Vision Computing:",
+            content: "Image/video processing, Image/video synthesis, Image Enhancement/Super Resolution/Restoration, Image/Video Retrieval, Remote sensing, Multispectral/Hyperspectral image Processing, Segmentation and Shape Representation, Image/Video Scene Understanding, Medical Image and Video Analysis, Stereo Vision, Document Image Analysis, Image and Video Matching."
+        },
+        {
+            heading: "Track 2: Cybersecurity and Forensics:",
+            content: "Network and cyber security, Computer security, Systems security, Security policy, model and architecture, Formal methods and verification, Security in mobile and wireless communications,  Privacy and trust, Attacks on AI models, Privacy preservation of AI, Malware forensics, Mobile app forensics, Blockchains and distributed ledger security, IoT security."
+        },
+        {
+            heading: "Track 3: AI and Data Science:",
+            content: "Computational Intelligence, Optimization Techniques, Explainable AI, Value AI, Robotic Intelligence, Data Intelligence, Multimedia Intelligent Systems, Document and Synthetic Visual Processing, Transfer Learning, Multi-task Learning, Evolutionary Algorithms, Graph Convolutional Networks, Applications in AI."
+        },
+        {
+            heading: "Track 4: Communication Networks:",
+            content: "Next-Generation Internet Architectures, Software-Defined Networking (SDN), Network Function Virtualization (NFV), Protocol Design and Optimization, Network Interoperability, Cellular Networks (5G, 6G, and Beyond), Ad Hoc, Mesh, and Sensor Networks, Vehicular Networks (VANETs, V2X), Data Dissemination in Intelligent Transportation System, Low-Power Wide-Area Networks (LPWANs), Wireless Body Area Networks (WBANs), AI/ML in Communication Networks, Multimedia Streaming Services, IoT-Fog interconnection Network, Mobile Edge Computing, Cloud Computing etc."
+        },
+        {
+            heading: "Track 5: Cyber Physical Systems and IoT:",
+            content: "Smart Cities and Infrastructure, Industrial IoT (IIoT) and Smart Manufacturing, Edge Computing and IoT, Security and Privacy in IoT and CPS, Sensors and Actuators in IoT, IoT Data Analytics and Machine Learning, Healthcare and Medical IoT (Health IoT), Energy Management and Smart Grids, CPS for autonomous robots and drones, Standards and Interoperability in IoT."
+        },
+        {
+            heading: "Track 6: Robotics and Autonomous Systems:",
+            content: "SLAM, Sensor Fusion, AI navigation, Deep/reinforcement learning in robotics, Swarm coordination, Automation in manufacturing, Healthcare, Agriculture. Autonomous Vehicles, UAVs, Underwater Robots, Human-Robot interaction and Assistive Robotics, Cybersecurity in Robotics, Multi Agent Systems, Emergent behaviour."
+        },
+        {
+            heading: "Track 7: Computer and Software Systems:",
+            content: "Computer Architecture, Distributed Systems, High-Performance Computing, Embedded Systems, Cloud Computing, Human-Computer Interaction, Software architecture and design patterns, Secure software development and Static Code Analysis, Model-driven engineering and low-code development, Open-source software development and governance, Software testing, verification, and validation."
+        },
+        {
+            heading: "Track 8: Emerging Computing Technologies and Systems:",
+            content: "Social Networks and Complex Networks, Algorithmic Game Theory and Computational Economics, Blockchain and Decentralized Systems, Post-Quantum Computing and Cryptography, Emerging Computing Paradigms, Ethics, Privacy, and Trust in Emerging Technologies, Applications of Emerging Technologies."
+        },
+    ]
     return (
         <>
         {/* <Header/> */}
@@ -32,10 +66,20 @@ function CFP() {
             </div>
             <hr />
             <div className="py-8">
+                <div className="text-2xl font-semibold">Topics of conference</div>
+                {RegularTracks.map((item, index) => (
+                            <div key={index} className="mt-4 md:mt-5">
+                                <div className="text-black tracking-wider text-md md:text-lg font-bold">{item.heading}</div>
+                                <div className="text-justify tracking-wider text-sm/relaxed mt-1">{item.content}</div>
+                            </div>
+                        ))}
+            </div>
+            <hr />
+            <div className="py-8">
                 <div className="pb-8">
                     <div className="text-2xl font-bold">Conference Proceedings</div>
                     <div className="mt-3 text-sm">
-                        The <span className="font-bold">proceedings of ReACS 2025 will be published by IEEE</span> <a href="https://conferences.ieee.org/conferences_events/conferences/conferencedetails/67479" className="text-blue-600 underline font-semibold">Conference ID: 67479</a>. All accepted and presented papers will be submitted to <span className="font-bold">IEEE Xplore,</span> which is indexed with world’s leading Abstracting & Indexing (A&I) databases (SCOPUS etc.) subject to meeting <span className="font-bold">IEEE’s quality and scope requirements.</span> Papers accepted for presentation but <span className="font-bold">not presented at the conference (no-show)</span> will <span className="font-bold">not be included in the final proceedings.</span>
+                        The <span className="font-bold">proceedings of ReACS 2025 will be published by IEEE</span> (<a href="https://conferences.ieee.org/conferences_events/conferences/conferencedetails/67479" className="text-blue-600 underline">Conference ID: 67479</a>). All accepted and presented papers will be submitted to <span className="font-bold">IEEE Xplore,</span> which is indexed with world’s leading Abstracting & Indexing (A&I) databases (SCOPUS etc.) subject to meeting <span className="font-bold">IEEE’s quality and scope requirements.</span> Papers accepted for presentation but <span className="font-bold">not presented at the conference (no-show)</span> will <span className="font-bold">not be included in the final proceedings.</span>
                     </div>
                 </div>
                 <hr />

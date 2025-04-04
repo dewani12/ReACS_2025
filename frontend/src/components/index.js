@@ -6,7 +6,6 @@ import RegistrationFees from "./RegistrationFees";
 import Card from "./Card";
 import Timeline from "./Timeline";
 import LogoSection from "./LogoSection";
-import Header from "./Header";
 
 export {
     Footer,
@@ -16,6 +15,5 @@ export {
     RegistrationFees,
     Card,
     Timeline,
-    LogoSection,
-    Header
+    LogoSection
 }

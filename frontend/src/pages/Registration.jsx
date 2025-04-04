@@ -1,4 +1,4 @@
-import { Footer, Header, Navbar, RegistrationFees } from "../components/index.js"
+import { Footer, Navbar, RegistrationFees } from "../components/index.js"
 
 function Registration() {
   return (

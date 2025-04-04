@@ -1,4 +1,4 @@
-import { Card, Footer, Header, Navbar } from "../components/index.js";
+import { Card, Footer, Navbar } from "../components/index.js";
 
 const committeeData = [
   {
@@ -67,49 +67,49 @@ const committeeData = [
 
 const trackChairs = [
   {
-    title: "Track 1",
+    title: "Track 1 (Vision Computing)",
     members: [
       { src: "https://www.iiitm.ac.in/images/demo/teachers/1680515973_nsp3.jpg", name: "Dr. Narinder Singh Punn", dsgn: "ABV-IIITM, India" },
     ]
   },
   {
-    title: "Track 2",
+    title: "Track 2 (Cybersecurity and Forensics)",
     members: [
       { src: "https://www.iiitm.ac.in/images/demo/teachers/1533546077_drsaumya.jpg", name: "Dr. Saumya Bhadauria", dsgn: "ABV-IIITM, India" },
     ]
   },
   {
-    title: "Track 3",
+    title: "Track 3 (AI and Data Science)",
     members: [
       { src: "https://www.iiitm.ac.in/images/demo/teachers/1690364914_DD%20-%20Copy-fotor-bg-remover-2023072610251.png", name: "Dr. Deepak Kumar Dewangan", dsgn: "ABV-IIITM, India" },
     ]
   },
   {
-    title: "Track 4",
+    title: "Track 4 (Communication Networks)",
     members: [
       { src: "https://www.iiitm.ac.in/images/demo/teachers/1554378514_DSC_3785.JPG", name: "Dr. Debanjan Sadhya", dsgn: "ABV-IIITM, India" },
     ]
   },
   {
-    title: "Track 5",
+    title: "Track 5 (Cyber Physical Systems and IoT)",
     members: [
       { src: "https://www.iiitm.ac.in/images/New-Photo.jpg", name: "Dr. Chittaranjan Swain", dsgn: "ABV-IIITM, India" }
     ]
   },
   {
-    title: "Track 6",
+    title: "Track 6 (Robotics and Autonomous Systems)",
     members: [
       { src: "https://www.iiitm.ac.in/images/demo/teachers/1533544986_godfrey_pic.jpg", name: "Dr. Wilfred G Godfrey", dsgn: "ABV-IIITM, India" },
     ]
   },
   {
-    title: "Track 7",
+    title: "Track 7 (Computer and Software Systems)",
     members: [
       { src: "https://www.iiitm.ac.in/images/demo/teachers/1601567414_IMG_20201001_171900.jpg", name: "Dr. Santosh Singh Rathore", dsgn: "ABV-IIITM, India" },
     ]
   },
   {
-    title: "Track 8",
+    title: "Track 8 (Emerging Computing Technologies and Systems)",
     members: [
       { src: "https://www.iiitm.ac.in/images/demo/teachers/1677497918_AvadhKishor.jpg", name: "Dr. Avadh Kishor", dsgn: "ABV-IIITM, India" },
     ]
