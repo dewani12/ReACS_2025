@@ -71,8 +71,8 @@ function HeroSection() {
         </div>
 
         {/* Hero Content */}
-        <div className="relative max-w-7xl flex flex-col justify-center text-justify mx-auto pt-4 md:pt-10 lg:pt-12">
-          <div className='flex justify-center mb-6 lg:mb-4'>
+        <div className="relative max-w-7xl flex flex-col justify-center text-justify mx-auto pt-14 md:pt-10 lg:pt-12">
+          <div className='flex justify-center lg:mb-4'>
             <img 
               src={ReACE_logo} 
               alt="IIIT Logo" 
