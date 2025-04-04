@@ -6,6 +6,7 @@ import RegistrationFees from "./RegistrationFees";
 import Card from "./Card";
 import Timeline from "./Timeline";
 import LogoSection from "./LogoSection";
+import Maki from "./Maki";
 
 export {
     Footer,
@@ -15,5 +16,6 @@ export {
     RegistrationFees,
     Card,
     Timeline,
-    LogoSection
+    LogoSection,
+    Maki
 }
