@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import img1 from "./../assets/collegeImg1.svg"
 import img2 from "./../assets/collegeImg2.svg"
-import ReACE_logo from "./../assets/ReACE_logo.png"
+import ReACE_logo from "./../assets/ReACS logo.png"
 import ieee_logo from "./../assets/ieee_logo.png"
 import ieee from "./../assets/ieee.png"
 import iiit_logo from "./../assets/iiit.png"
@@ -63,16 +63,16 @@ function HeroSection() {
         </div>
 
         {/* Hero Content */}
-        <div className="relative max-w-7xl text-justify mx-auto px-10 pt-10 sm:pt-10 md:pt-28 lg:pt-32">
-        {/* <img 
-                  src={ieee} 
+        <div className="relative max-w-7xl flex flex-col justify-center text-justify mx-auto  pt-4 md:pt-10 lg:pt-12 ">
+        <div className='flex justify-center  mb-6 lg:mb-4'>
+
+        <img 
+                  src={ReACE_logo} 
                   alt="IIIT Logo" 
-                  className=" h-auto object-contain p-1.5 sm:p-2 md:p-2.5 transition-transform hover:scale-105"
-                /> */}
-          <h1 className="text-3xl md:text-4xl font-extrabold tracking-normal text-white sm:text-3xl lg:text-6xl text-center">
-            ReACS 2025
-          </h1>
-          <p className="mt-6 text-md tracking-wider md:text-xl text-white text-center max-w-4xl mx-auto font-semibold">
+                  className=" h-auto w-[200px] md:w-[300px] object-contain"
+                />
+        </div>
+          <p className="text-md tracking-wider md:text-xl text-white text-center max-w-4xl mx-auto font-semibold">
             2025 IEEE International Conference on Recent Advances in Computing and Systems
           </p>
           <p className="mt-4 tracking-wider text-sm md:text-lg text-white text-center font-bold">
@@ -141,17 +141,17 @@ function HeroSection() {
                 <img 
                   src={ieee_logo} 
                   alt="ReACE Logo" 
-                  className="w-[100px] sm:w-[180px] lg:w-[250px] h-auto object-contain p-1.5 sm:p-2 md:p-2.5 transition-transform hover:scale-105"
+                  className="w-[90px] sm:w-[150px] lg:w-[220px] h-auto object-contain"
                 />
                 <img 
                   src={iiit_logo} 
                   alt="IEEE Logo" 
-                  className="h-[100px] sm:h-[180px] lg:h-48 w-auto object-contain p-1.5 sm:p-2 md:p-2.5 transition-transform hover:scale-105"
+                  className="w-[90px] sm:w-[150px] lg:w-[220px] h-auto object-contain"
                 />
                 <img 
                   src={ieee} 
                   alt="IIIT Logo" 
-                  className="w-[100px] sm:w-[180px] lg:w-[250px] h-auto object-contain p-1.5 sm:p-2 md:p-2.5 transition-transform hover:scale-105"
+                  className="w-[90px] sm:w-[150px] lg:w-[220px] h-auto object-contain"
                 />
               </div>
             </div>

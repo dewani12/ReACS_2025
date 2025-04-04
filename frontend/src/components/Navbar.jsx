@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Menu, X} from 'lucide-react';
 import { NavLink, Link, useLocation } from 'react-router-dom';
+import ReACE_logo from "./../assets/ReACS logo.png"
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,7 +33,11 @@ const Navbar = () => {
             <div className="flex-shrink-0 flex items-center">
               <div className="rounded-lg flex items-center justify-center">
                 <Link to={"/"}>
-                <h1 className="text-3xl text-white font-bold">ReACS 2025</h1>
+                <img 
+                  src={ReACE_logo} 
+                  alt="IEEE Logo" 
+                  className="w-[100px] h-auto object-contain"
+                />
                 </Link>
               </div>
             </div> 
@@ -79,7 +85,13 @@ const Navbar = () => {
                 <div className="flex items-center justify-between my-6">
                   <div className="flex items-center">
                     <div className="pl-4 rounded-lg flex items-center justify-center">
-                      <Link to="/" className="text-3xl font-bold">ReACS 2025</Link>
+                      <Link to="/" className="">
+                      <img 
+                        src={ReACE_logo} 
+                        alt="IEEE Logo" 
+                        className="w-[150px] h-auto object-contain"
+                      />
+                      </Link>
                     </div>
                   </div>
                 </div>
