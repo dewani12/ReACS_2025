@@ -9,6 +9,7 @@ const committeeData = [
   {
     title: "General Chairs", members: [
       { src: "https://www.iiitm.ac.in/images/Photo.jpg", name: "Dr. Vinod Kumar Jain", dsgn: "ABV-IIITM, India" },
+      { src: "https://www.iiitm.ac.in/images/demo/teachers/1533544986_godfrey_pic.jpg", name: "Dr. Wilfred G Godfrey", dsgn: "ABV-IIITM, India" },
       { src: "https://media.licdn.com/dms/image/v2/C4D03AQErzve6cmR0gA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1660581378525?e=1747267200&v=beta&t=dTtWYhJTDjo8DBndVRleuOcZefOioIUdCdyf4Q050hQ", name: "Dr. Manish Dixit", dsgn: "MITS Gwalior, India" }
     ]
   },
