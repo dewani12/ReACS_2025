@@ -71,18 +71,21 @@ const trackChairs = [
     title: "Track 1 (Vision Computing)",
     members: [
       { src: "https://www.iiitm.ac.in/images/demo/teachers/1680515973_nsp3.jpg", name: "Dr. Narinder Singh Punn", dsgn: "ABV-IIITM, India" },
+      { src: "https://profile.iiita.ac.in/sonali/static/images/sa.jpg", name: "Dr. Sonali Agarwal", dsgn: "IIIT Allahabad, Prayagraj" },
     ]
   },
   {
     title: "Track 2 (Cybersecurity and Forensics)",
     members: [
       { src: "https://www.iiitm.ac.in/images/demo/teachers/1533546077_drsaumya.jpg", name: "Dr. Saumya Bhadauria", dsgn: "ABV-IIITM, India" },
+      { src: "https://www.iiits.ac.in/iiits-content/uploads/2020/12/neha.png", name: "Dr. Neha Agarwal", dsgn: "IIIT Sricity, Chitoor" },
     ]
   },
   {
     title: "Track 3 (AI and Data Science)",
     members: [
       { src: "https://www.iiitm.ac.in/images/demo/teachers/1690364914_DD%20-%20Copy-fotor-bg-remover-2023072610251.png", name: "Dr. Deepak Kumar Dewangan", dsgn: "ABV-IIITM, India" },
+      { src: "https://www.nitmz.ac.in/ImageGenerator.aspx?imgID=200417&command=profile_pic&w=100&h=100", name: "Dr. Vaibhav Malviya", dsgn: "National Institute of Technology, Mizoram" },
     ]
   },
   {
@@ -94,7 +97,8 @@ const trackChairs = [
   {
     title: "Track 5 (Cyber Physical Systems and IoT)",
     members: [
-      { src: "https://www.iiitm.ac.in/images/New-Photo.jpg", name: "Dr. Chittaranjan Swain", dsgn: "ABV-IIITM, India" }
+      { src: "https://www.iiitm.ac.in/images/New-Photo.jpg", name: "Dr. Chittaranjan Swain", dsgn: "ABV-IIITM, India" },
+      { src: "https://www.nitmz.ac.in/ImageGenerator.aspx?imgID=200522&command=profile_pic&w=100&h=100", name: "Dr. Tanmay Kumar Behera", dsgn: "National Institute of Technology, Mizoram" }
     ]
   },
   {
