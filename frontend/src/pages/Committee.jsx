@@ -78,7 +78,7 @@ const trackChairs = [
     title: "Track 2 (Cybersecurity and Forensics)",
     members: [
       { src: "https://www.iiitm.ac.in/images/demo/teachers/1533546077_drsaumya.jpg", name: "Dr. Saumya Bhadauria", dsgn: "ABV-IIITM, India" },
-      { src: "https://www.iiits.ac.in/iiits-content/uploads/2020/12/neha.png", name: "Dr. Neha Agarwal", dsgn: "IIIT Sricity, Chitoor" },
+      { src: "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=EqJapj4AAAAJ&citpid=7", name: "Dr. Neha Agarwal", dsgn: "IIIT Sricity, Chitoor" },
     ]
   },
   {
