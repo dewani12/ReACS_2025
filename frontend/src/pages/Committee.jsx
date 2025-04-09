@@ -92,6 +92,7 @@ const trackChairs = [
     title: "Track 4 (Communication Networks)",
     members: [
       { src: "https://www.iiitm.ac.in/images/demo/teachers/1554378514_DSC_3785.JPG", name: "Dr. Debanjan Sadhya", dsgn: "ABV-IIITM, India" },
+      { src: "http://faculty.iiitdmj.ac.in/proPic/Durgesh.jpg", name: "Dr. Durgesh Singh", dsgn: "IIITDM Jabalpur" },
     ]
   },
   {
@@ -105,18 +106,21 @@ const trackChairs = [
     title: "Track 6 (Robotics and Autonomous Systems)",
     members: [
       { src: "https://www.iiitm.ac.in/images/demo/teachers/1533544986_godfrey_pic.jpg", name: "Dr. Wilfred G Godfrey", dsgn: "ABV-IIITM, India" },
+      { src: "https://www.iiitm.ac.in/images/demo/teachers/1689745249_photo2.jpg", name: "Dr. Rahul Kala", dsgn: "ABV-IIITM Gwalior" },
     ]
   },
   {
     title: "Track 7 (Computer and Software Systems)",
     members: [
       { src: "https://www.iiitm.ac.in/images/demo/teachers/1601567414_IMG_20201001_171900.jpg", name: "Dr. Santosh Singh Rathore", dsgn: "ABV-IIITM, India" },
+      { src: "https://mnit.ac.in/PortalProfile/images/faculty/mnitjas264.png", name: "Dr. Satyendra Singh Chouhan", dsgn: "MNIT Jaipur" },
     ]
   },
   {
     title: "Track 8 (Emerging Computing Technologies and Systems)",
     members: [
       { src: "https://www.iiitm.ac.in/images/demo/teachers/1677497918_AvadhKishor.jpg", name: "Dr. Avadh Kishor", dsgn: "ABV-IIITM, India" },
+      { src: "https://www.ietlucknow.ac.in/sites/default/files/styles/150x150/public/propic/manik_opt.jpg?itok=xy6WLoie", name: "Dr. Manik Chandra  ", dsgn: "IET  Lucknow" },
     ]
   },
 
