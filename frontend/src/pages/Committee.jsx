@@ -92,7 +92,7 @@ const trackChairs = [
     title: "Track 4 (Communication Networks)",
     members: [
       { src: "https://www.iiitm.ac.in/images/demo/teachers/1554378514_DSC_3785.JPG", name: "Dr. Debanjan Sadhya", dsgn: "ABV-IIITM, India" },
-      { src: "http://faculty.iiitdmj.ac.in/proPic/Durgesh.jpg", name: "Dr. Durgesh Singh", dsgn: "IIITDM Jabalpur" },
+      { src: "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=LgEsjywAAAAJ&citpid=6", name: "Dr. Durgesh Singh", dsgn: "IIITDM Jabalpur" },
     ]
   },
   {
