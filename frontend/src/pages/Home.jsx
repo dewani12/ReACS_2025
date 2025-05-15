@@ -1,4 +1,4 @@
-import {Footer, HeroSection, LogoSection, MainSection, Maki, Navbar } from "../components/index.js"
+import {Footer, HeroSection, LogoSection, MainSection, Navbar } from "../components/index.js"
 
 function Home() {
     // const conferenceData = {

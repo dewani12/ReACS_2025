@@ -1,4 +1,5 @@
 import TimeLine from "./Timeline"
+import Marquee from "./Marquee"
 
 function MainSection() {
     const RegularTracks = [
@@ -35,9 +36,18 @@ function MainSection() {
             content: "Social Networks and Complex Networks, Algorithmic Game Theory and Computational Economics, Blockchain and Decentralized Systems, Post-Quantum Computing and Cryptography, Emerging Computing Paradigms, Ethics, Privacy, and Trust in Emerging Technologies, Applications of Emerging Technologies."
         },
     ]
+    const updates = [
+        {text:"Submission Link", url: "https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FReACS2025%2F"},
+        {text:"Paper Submission Date Extended"},
+        {text:"Call for Papers Brochure", url: "https://reacs2025.s3.ap-south-1.amazonaws.com/CFP_Brochure.pdf"}
+    ]
 
     return (
         <div className="inter primary-bg text-cl py-2 px-4 md:px-12 sm:py-4 mt-12 md:py-8 max-w-[1280px] mx-auto">
+            <div className="pb-6">
+                <Marquee updates={updates}/>
+            </div>
+            
             <div className="mb-6 pb-4 border-b-1">
                 <div className="heading-cl text-3xl md:text-4xl tracking-normal font-bold">Welcome to ReACS 2025</div>
                 <div className="text-sm/relaxed mt-4 tracking-wide text-justify"><span className="font-semibold">Welcome to the 2025 IEEE International Conference on Recent Advances in Computing and Systems (ReACS2025) is being organised by the Department of CSE, ABV-IIITM</span>, to functionalize it as a platform for dissemination of recent high-quality research work in the domain of Computing and Systems. This conference (<a href="https://conferences.ieee.org/conferences_events/conferences/conferencedetails/67479" className="text-blue-600 underline font-semibold">IEEE Conference ID: 67479</a>) covers the wide domain of Computer Science and Engineering and will provide a means to exchange innovative ideas and recent advances among researchers from academia and industry.</div>
