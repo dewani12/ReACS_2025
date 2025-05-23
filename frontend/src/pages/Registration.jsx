@@ -1,5 +1,5 @@
 import { Footer, Navbar, RegistrationFees } from "../components/index.js"
-
+import qr from "../assets/qr.png"
 function Registration() {
   return (
     <>
@@ -19,6 +19,10 @@ function Registration() {
           <p><span className="font-bold">IFSC Code: </span>BKID0009462</p>
           <p><span className="font-bold">SWIFT Code: </span>BKIDINBBGWA</p>
         </div>
+      </div>
+      <div className="py-2">
+        <div className="font-bold">Scan & Pay</div>
+        <img className="ml-5 mt-2 h-80" src={qr} alt="Qr code" />
       </div>
     </div>
     <Footer/>
