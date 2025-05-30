@@ -38,7 +38,7 @@ function MainSection() {
     ]
     const updates = [
         {text:"Submission Link", url: "https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FReACS2025%2F"},
-        {text:"Final Extended Paper Submission Deadline"},
+        {text:"Final Extended Paper Submission Deadline 06 June 2025"},
         {text:"Call for Papers Brochure", url: "https://reacs2025.s3.ap-south-1.amazonaws.com/CFP_Brochure.pdf"}
     ]
 
