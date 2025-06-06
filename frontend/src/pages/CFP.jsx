@@ -1,5 +1,6 @@
 import { Download } from "lucide-react"
 import { Navbar, Footer } from "../components"
+import brochure from "../assets/REACSbrochureSecondphase.pdf"
 
 function CFP() {
     const RegularTracks = [
@@ -54,7 +55,8 @@ function CFP() {
                 </div>
                 <div className="mt-5">
                 <a
-                    href="https://reacs2025.s3.ap-south-1.amazonaws.com/CFP_Brochure.pdf"
+                    href={brochure}
+                    target="_blank"
                     className="flex items-center w-fit gap-2 hover:bg-blue-200 hover:text-blue-800 bg-[#043A75] text-white mt-2 px-6 py-3 rounded-full transition-colors"
                   >
                     <Download className="w-4 h-4" />
