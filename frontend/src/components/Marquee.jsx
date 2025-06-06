@@ -1,7 +1,7 @@
 function Marquee({ updates }) {
     return (
         <div className="w-full bg-blue-50 overflow-hidden whitespace-nowrap relative">
-            <div className="marquee-track flex gap-12 py-2 px-4 text-[#0054B0] text-sm font-medium">
+            <div className={`marquee-track flex gap-12 py-2 px-4 text-[#0054B0] text-sm font-medium`}>
                 {/* Duplicate items for seamless scroll */}
                 {[...updates, ...updates].map((item, idx) => (
                     item.url ? (
@@ -15,7 +15,7 @@ function Marquee({ updates }) {
                             🔹 {item.text}
                         </a>
                     ) : (
-                        <span key={idx} className="shrink-0">
+                        <span key={idx} className={`${item.styles} shrink-0`}>
                             🔹 {item.text}
                         </span>
                     )
