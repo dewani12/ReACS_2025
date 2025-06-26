@@ -8,6 +8,9 @@ function Registration() {
     <div className="inter py-4 px-4 md:px-12 sm:py-4 md:py-6 max-w-[1280px] mx-auto">
       <div className="text-2xl font-semibold">Registration Fees Details</div>
       <RegistrationFees />
+      <div className="mt-2 text-sm/relaxed">
+        <span className="font-bold">*</span> The registration fee is not refundable.
+      </div>
       <div className="py-4">
         <div className="font-semibold">The account details for payment of Registration fees are given as follows:</div>
         <div className="mt-2 text-sm ml-5 space-y-1">
