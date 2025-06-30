@@ -48,6 +48,19 @@ function Registration() {
           </div>
         </div>
         <div className="pb-5">
+          <div className="text-2xl font-semibold">Registration Form</div>
+          <div className="text-sm ml-5 mt-2"><p>For authors with multiple accepted papers, the registration form must be filled out separately for each paper.</p>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdzICBCcQgT-De1oPG2xxlKoc_itvNbwmDSApMbmeT_PuRl7A/viewform"
+              className="flex items-center w-fit gap-2 hover:bg-blue-200 hover:text-blue-800 bg-[#043A75] text-white mt-2 px-6 py-3 rounded-full transition-colors"
+            >
+              <span className="font-semibold">
+                Register Here
+              </span>
+            </a>
+          </div>
+        </div>
+        <div className="pb-5">
           <div className="text-2xl font-semibold">Terms and Conditions</div>
           <ol className="mt-2 ml-5 list-decimal space-y-2 text-sm">
             <li>Papers exceeding 6 pages are subject to an extra page charge of INR 1180
@@ -67,7 +80,7 @@ function Registration() {
               <li>Social events during the conference</li>
             </ul>
             <li>Registration fee does not include accommodation. Accommodation details will be
-shared on the conference website in due course of time.</li>
+              shared on the conference website in due course of time.</li>
           </ol>
         </div>
         <div className="text-2xl font-semibold">Registration Fees Details</div>
