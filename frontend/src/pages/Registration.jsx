@@ -43,7 +43,7 @@ function Registration() {
         <div className="pb-5">
           <div className="text-2xl font-semibold">Registration Queries</div>
           <div className="text-sm ml-5 mt-2"><p>For any queries regarding registration, kindly contact:</p>
-            <p>Dr. Avadh Kishore, Finance and Sponsorship Chair, ReACS 2025</p>
+            <p>Dr. Avadh Kirshor, Finance and Sponsorship Chair, ReACS 2025</p>
             <p>📧 Email: akishor@iiitm.ac.in</p>
           </div>
         </div>

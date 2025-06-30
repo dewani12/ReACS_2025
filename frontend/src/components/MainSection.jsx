@@ -37,12 +37,15 @@ function MainSection() {
         },
     ]
     const updates = [
-        {text:"First Phase Paper Submission Link", 
-        url: "https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FReACS2025%2F",
-        style: ""},
+        {text:"Registration instructions and details are updated",
+        url: "/registration",
+        },
+        // {text:"First Phase Paper Submission Link", 
+        // url: "https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FReACS2025%2F",
+        // style: ""},
         {text:"Final Extended Paper Submission Deadline 06 June 2025"},
         
-        {text:"Second Phase Paper Submission Starts on 07 June 2025", styles: "font-extrabold"},
+        {text:"Second Phase Paper Submission Starts on 07 June 2025"},
         // {text:"Call for Papers Brochure", url: "https://reacs2025.s3.ap-south-1.amazonaws.com/CFP_Brochure.pdf"}
     ]
 
