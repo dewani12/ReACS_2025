@@ -8,7 +8,7 @@ function CRS() {
         <div className='pb-6'>
           <div className='text-2xl font-semibold'>Camera Ready Submission Guidelines</div>
           <div className='text-sm text-red-600 font-semibold mt-2'>Please note that the last date for uploading the final camera-ready manuscript for the
-            First Phase of Accepted Papers is 30-09-2025, 23:59 IST.</div>
+            First Phase of Accepted Papers is 31st July 2025, 23:59 IST.</div>
           <div className='text-sm font-semibold mt-2'>At least one author must complete registration before uploading the final manuscript.</div>
         </div>
         <div className='pb-5'>

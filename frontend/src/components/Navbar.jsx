@@ -9,7 +9,9 @@ const Navbar = () => {
   const [isCallsDropdownOpen, setIsCallsDropdownOpen] = useState(false);
   const [isMobileCallsOpen, setIsMobileCallsOpen] = useState(false);
   const [isMobileMoreOpen, setIsMobileMoreOpen] = useState(false);
+  const [isSubmissionDdOpen, setIsSubmissionDdOpen] = useState(false);
   const {pathname} = useLocation();
+
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -18,7 +20,7 @@ const Navbar = () => {
   const mainNavItems = [
     { name: "Home", path: "/" },
     { name: "Registration", path: "/registration" },
-    { name: "Submission", path: "/submission" },
+    // { name: "Submission", path: "/submission" },
     { name: "Schedule", path: "/schedule" },
     { name: "Committee", path: "/committee" },
   ];
@@ -28,9 +30,13 @@ const Navbar = () => {
   ];
 
   const dropdownItems = [
-    { name: "Camera Ready Submission", path: "/crs" },
     { name: "About", path: "/about" },
   ];
+
+  const submissionDropdownItems = [
+    { name: "Camera Ready Submission", path: "/crs" },
+    { name: "Submission", path: "/submission" },
+  ]
 
   useEffect(() => {
     setIsOpen(false);
@@ -71,6 +77,41 @@ const Navbar = () => {
                 {item.name}
               </NavLink>
             ))}
+
+            {/* submission Dropdown Menu */}
+            <div 
+              className="relative"
+              onMouseEnter={() => setIsSubmissionDdOpen(true)}
+              onMouseLeave={() => setIsSubmissionDdOpen(false)}
+            >
+              <button 
+                className="bg-gray-100 text-black hover:bg-blue-200 hover:text-blue-800 px-4 py-2 rounded-full text-sm font-medium flex items-center gap-1"
+              >
+                Submission <ChevronDown className="h-4 w-4" />
+              </button>
+
+              {/* Submission Dropdown Content */}
+              <div 
+                className={`absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 transition-all duration-200 ease-in-out ${
+                  isSubmissionDdOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+                }`}
+              >
+                <div className="py-1">
+                  {submissionDropdownItems.map((item) => (
+                    <NavLink
+                      key={item.path}
+                      to={item.path}
+                      className={({isActive}) =>
+                        `${isActive ? 'bg-gray-100 text-blue-800' : 'text-gray-700'}
+                        block px-4 py-2 text-sm hover:bg-gray-50`
+                      }
+                    >
+                      {item.name}
+                    </NavLink>
+                  ))}
+                </div>
+              </div>
+            </div>
 
             {/* Calls Dropdown Menu */}
             <div 

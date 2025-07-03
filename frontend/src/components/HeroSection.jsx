@@ -13,11 +13,12 @@ function HeroSection() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isCallsDropdownOpen, setIsCallsDropdownOpen] = useState(false);
+  const [isSubmissionDdOpen, setIsSubmissionDdOpen] = useState(false);
 
   const mainNavItems = [
     { name: "Home", path: "/" },
     { name: "Registration", path: "/registration" },
-    { name: "Submission", path: "/submission" },
+    // { name: "Submission", path: "/submission" },
     { name: "Schedule", path: "/schedule" },
     { name: "Committee", path: "/committee" },
   ];
@@ -27,12 +28,13 @@ function HeroSection() {
   ];
 
   const dropdownItems = [
-    {
-      name: "Camera Ready Submission",
-      path: "/crs"
-    },
     { name: "About", path: "/about" }
   ];
+
+  const submissionDropdownItems = [
+    { name: "Camera Ready Submission", path: "/crs" },
+    { name: "Submission", path: "/submission" },
+  ]
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -105,7 +107,37 @@ function HeroSection() {
                         {item.name}
                       </Link>
                     ))}
-                    
+
+                    {/* Submission Dropdown Menu */}
+                    <div 
+                      className="relative"
+                      onMouseEnter={() => setIsSubmissionDdOpen(true)}
+                      onMouseLeave={() => setIsSubmissionDdOpen(false)}
+                    >
+                      <button 
+                        className="px-8 py-2 text-sm font-medium text-white hover:bg-[#2769b0] flex items-center gap-1"
+                      >
+                        Submission <ChevronDown className="h-4 w-4" />
+                      </button>
+                      <div 
+                        className={`absolute left-0 mt-1 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 transition-all duration-200 ease-in-out ${
+                          isSubmissionDdOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+                        }`}
+                      >
+                        <div className="py-1">
+                          {submissionDropdownItems.map((item) => (
+                            <Link
+                              key={item.name}
+                              to={item.path}
+                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                            >
+                              {item.name}
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+
                     {/* Calls Dropdown Menu */}
                     <div 
                       className="relative"
