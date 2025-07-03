@@ -218,7 +218,7 @@ function HeroSection() {
                 </div>
 
                 <div className="md:flex space-y-2 cursor-pointer font-semibold my-5">
-                  {[...mainNavItems, ...callsDropdownItems, ...dropdownItems].map((item) => (
+                  {[...mainNavItems, ...submissionDropdownItems, ...callsDropdownItems, ...dropdownItems].map((item) => (
                     <Link 
                       key={item.name}
                       to={item.path} 

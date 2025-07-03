@@ -237,6 +237,28 @@ const Navbar = () => {
               </NavLink>
             ))}
 
+            {/* Mobile Submission Dropdown */}
+            <div className="border-b border-gray-800">
+              <button
+                onClick={() => setIsSubmissionDdOpen(!isSubmissionDdOpen)}
+                className="text-white pl-4 pb-2 w-full flex items-center justify-between pr-4"
+              >
+                <span>Submission</span>
+                <ChevronRight className={`h-5 w-5 transform transition-transform ${isSubmissionDdOpen ? 'rotate-90' : ''}`} />
+              </button>
+              <div className={`overflow-hidden transition-all duration-300 ${isSubmissionDdOpen ? 'max-h-96' : 'max-h-0'}`}>
+                {submissionDropdownItems.map((item) => (
+                  <NavLink
+                    key={item.path}
+                    to={item.path}
+                    className="text-gray-300 pl-8 pb-2 block hover:text-white"
+                  >
+                    {item.name}
+                  </NavLink>
+                ))}
+              </div>
+            </div>
+
             {/* Mobile Calls Dropdown */}
             <div className="border-b border-gray-800">
               <button
