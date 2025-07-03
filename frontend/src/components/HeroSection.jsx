@@ -27,7 +27,11 @@ function HeroSection() {
   ];
 
   const dropdownItems = [
-    { name: "About", path: "/about" },
+    {
+      name: "Camera Ready Submission",
+      path: "/crs"
+    },
+    { name: "About", path: "/about" }
   ];
 
   const toggleMenu = () => {
