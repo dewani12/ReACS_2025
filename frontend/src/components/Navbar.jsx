@@ -28,6 +28,7 @@ const Navbar = () => {
   ];
 
   const dropdownItems = [
+    { name: "Camera Ready Submission", path: "/crs" },
     { name: "About", path: "/about" },
   ];
 
