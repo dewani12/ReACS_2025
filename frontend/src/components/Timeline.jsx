@@ -3,18 +3,18 @@ import {StepForward} from "lucide-react"
 const TimeLine = () => {
     const FirstPhaseEvents = [
         {   
-            newDate: "20 March, 2025",
+            oldDate: "20 March, 2025",
             label: "Paper Submission Open",
             done: false,
         },
         {   
-            oldDate: "30 May, 2025",
-            newDate: "06 June, 2025",
+            // oldDate: "30 May, 2025",
+            oldDate: "06 June, 2025",
             label: "Paper Submission Deadline",
             done: false,
         },
         {   
-            newDate: "30 June, 2025",
+            oldDate: "30 June, 2025",
             label: "Acceptance Notification",
             done: false,
         },

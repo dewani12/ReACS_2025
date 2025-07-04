@@ -10,8 +10,8 @@ function Registration() {
           <div className="text-2xl font-semibold">Important Dates (first-phase)</div>
           <ul className="mt-2 ml-5 list-disc space-y-2 text-sm">
             <li><span className="font-semibold">Deadline for Early Bird Registration:</span> 15 July 2025</li>
-            <li><span className="font-semibold">Deadline for Camera-Ready Submission:</span> 25 July 2025</li>
-            <li><span className="font-semibold">All Registration Deadlines Close On:</span> 25 July 2025</li>
+            <li><span className="font-semibold">Deadline for Camera-Ready Submission:</span> 31 July 2025</li>
+            <li><span className="font-semibold">All Registration Deadlines Close On:</span> 31 July 2025</li>
           </ul>
         </div>
         <div className="pb-5">
@@ -43,8 +43,8 @@ function Registration() {
         <div className="pb-5">
           <div className="text-2xl font-semibold">Registration Queries</div>
           <div className="text-sm ml-5 mt-2"><p>For any queries regarding registration, kindly contact:</p>
-            <p>Dr. Avadh Kirshor, Finance and Sponsorship Chair, ReACS 2025</p>
-            <p>📧 Email: akishor@iiitm.ac.in</p>
+            <p> Registration team, ReACS 2025</p>
+            <p>📧 Email: reacs2025@iiitm.ac.in</p>
           </div>
         </div>
         <div className="pb-5">

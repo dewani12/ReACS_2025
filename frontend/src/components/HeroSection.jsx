@@ -32,8 +32,8 @@ function HeroSection() {
   ];
 
   const submissionDropdownItems = [
+    { name: "Second Phase Paper Submission", path: "/submission" },
     { name: "Camera Ready Submission", path: "/crs" },
-    { name: "Submission", path: "/submission" },
   ]
 
   const toggleMenu = () => {

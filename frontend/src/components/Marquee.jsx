@@ -1,9 +1,21 @@
+// Marquee.js
+
+function parseStyle(styleString) {
+    return styleString.split(";").reduce((acc, style) => {
+        const [key, value] = style.split(":");
+        if (key && value) {
+            const formattedKey = key.trim().replace(/-([a-z])/g, (_, char) => char.toUpperCase());
+            acc[formattedKey] = value.trim();
+        }
+        return acc;
+    }, {});
+}
+
 function Marquee({ updates }) {
     return (
         <div className="w-full bg-blue-50 overflow-hidden whitespace-nowrap relative">
-            <div className={`marquee-track flex gap-12 py-2 px-4 text-[#0054B0] text-sm font-medium`}>
-                {/* Duplicate items for seamless scroll */}
-                {[...updates, ...updates].map((item, idx) => (
+            <div className="marquee-track flex gap-12 py-2 px-4 text-[#0054B0] text-sm font-medium">
+                {[...updates, ...updates].map((item, idx) =>
                     item.url ? (
                         <a
                             key={idx}
@@ -11,15 +23,20 @@ function Marquee({ updates }) {
                             className="shrink-0 hover:underline hover:text-blue-600 transition-colors"
                             target={item.url.startsWith("http") ? "_blank" : "_self"}
                             rel="noopener noreferrer"
+                            style={item.style ? parseStyle(item.style) : {}}
                         >
                             🔹 {item.text}
                         </a>
                     ) : (
-                        <span key={idx} className={`${item.styles} shrink-0`}>
+                        <span
+                            key={idx}
+                            className="shrink-0"
+                            style={item.style ? parseStyle(item.style) : {}}
+                        >
                             🔹 {item.text}
                         </span>
                     )
-                ))}
+                )}
             </div>
 
             <style jsx>{`
