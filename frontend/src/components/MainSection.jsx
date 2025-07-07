@@ -37,6 +37,7 @@ function MainSection() {
         },
     ]
     const updates = [
+        { text: "Extended Second Phase Paper Submission Deadline 20 July 2025" },
         {
             text: "Registration instructions and details are updated",
             url: "/registration",
