@@ -9,7 +9,7 @@ const committeeData = [
   {
     title: "General Chairs", members: [
       { src: "https://www.iiitm.ac.in/images/Photo.jpg", name: "Dr. Vinod Kumar Jain", dsgn: "ABV-IIITM, India" },
-      { src: "https://www.iiitm.ac.in/images/demo/teachers/1533544986_godfrey_pic.jpg", name: "Dr. Wilfred G Godfrey", dsgn: "ABV-IIITM, India" },
+      { src: "https://www.iiitm.ac.in/images/demo/teachers/1533544986_godfrey_pic.jpg", name: "Dr. W Wilfred Godfrey", dsgn: "ABV-IIITM, India" },
       { src: "https://media.licdn.com/dms/image/v2/C4D03AQErzve6cmR0gA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1660581378525?e=1747267200&v=beta&t=dTtWYhJTDjo8DBndVRleuOcZefOioIUdCdyf4Q050hQ", name: "Dr. Manish Dixit", dsgn: "MITS Gwalior, India" }
     ]
   },
@@ -29,7 +29,7 @@ const committeeData = [
   },
   {
     title: "Technical Program Chairs", members: [
-      { src: "https://www.iiitm.ac.in/images/demo/teachers/1533544986_godfrey_pic.jpg", name: "Dr. Wilfred G Godfrey", dsgn: "ABV-IIITM, India" },
+      { src: "https://www.iiitm.ac.in/images/demo/teachers/1533544986_godfrey_pic.jpg", name: "Dr. W Wilfred Godfrey", dsgn: "ABV-IIITM, India" },
       { src: "https://www.iiitm.ac.in/images/demo/teachers/1533546077_drsaumya.jpg", name: "Dr. Saumya Bhadauria", dsgn: "ABV-IIITM, India" }
     ]
   },
@@ -63,7 +63,14 @@ const committeeData = [
       { src: "https://www.iiitm.ac.in/images/demo/teachers/1601567414_IMG_20201001_171900.jpg", name: "Dr. Santosh Singh Rathore", dsgn: "ABV-IIITM, India" },
       { src: "https://www.iiitm.ac.in/images/demo/teachers/1677497559_Amrendra%20.jpg", name: "Dr. Amrendra Singh Yadav", dsgn: "ABV-IIITM, India" }
     ]
-  }
+  },
+  {
+    title: "Registration Committee", members: [
+      { src: "https://www.iiitm.ac.in/images/demo/teachers/1533544986_godfrey_pic.jpg", name: "Dr. W Wilfred Godfrey", dsgn: "ABV-IIITM, India" },
+      { src: "https://www.iiitm.ac.in/images/demo/teachers/1601567414_IMG_20201001_171900.jpg", name: "Dr. Santosh Singh Rathore", dsgn: "ABV-IIITM, India" },
+      { src: "https://www.iiitm.ac.in/images/demo/teachers/1690364914_DD%20-%20Copy-fotor-bg-remover-2023072610251.png", name: "Dr. Deepak Kumar Dewangan", dsgn: "ABV-IIITM, India" },
+    ]
+  },
 ];
 
 const trackChairs = [
@@ -105,7 +112,7 @@ const trackChairs = [
   {
     title: "Track 6 (Robotics and Autonomous Systems)",
     members: [
-      { src: "https://www.iiitm.ac.in/images/demo/teachers/1533544986_godfrey_pic.jpg", name: "Dr. Wilfred G Godfrey", dsgn: "ABV-IIITM, India" },
+      { src: "https://www.iiitm.ac.in/images/demo/teachers/1533544986_godfrey_pic.jpg", name: "Dr. W Wilfred Godfrey", dsgn: "ABV-IIITM, India" },
       { src: "https://www.iiitm.ac.in/images/demo/teachers/1689745249_photo2.jpg", name: "Dr. Rahul Kala", dsgn: "ABV-IIITM Gwalior" },
     ]
   },
