@@ -30,6 +30,7 @@ const Navbar = () => {
   ];
 
   const dropdownItems = [
+    { name: "Keynote Speakers", path: "/speakers" },
     { name: "About", path: "/about" },
   ];
 

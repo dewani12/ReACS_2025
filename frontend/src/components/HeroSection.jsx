@@ -28,6 +28,7 @@ function HeroSection() {
   ];
 
   const dropdownItems = [
+    { name: "Keynote Speakers", path: "/speakers" },
     { name: "About", path: "/about" }
   ];
 

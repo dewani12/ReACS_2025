@@ -9,6 +9,7 @@ import Committee from "./pages/Committee"
 import About from "./pages/About"
 import ScrollToTop from "./components/ScrollToTop"
 import CRS from "./pages/CRS"
+import Speakers from "./pages/Speakers"
 function App() {
   return (
     <BrowserRouter>
@@ -22,6 +23,7 @@ function App() {
         <Route path="/committee" element={<Committee />} />
         <Route path="/about" element={<About />} />
         <Route path="/crs" element={<CRS />} />
+        <Route path="/speakers" element={<Speakers />} />
       </Routes>
     </BrowserRouter>
   )
