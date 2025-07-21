@@ -42,6 +42,11 @@ function MainSection() {
             text: "Registration instructions and details are updated",
             url: "/registration",
         },
+        {
+            text: "Keynote Speakers",
+            url: "/speakers",
+            style: "color: blue;"
+        },
         // {text:"First Phase Paper Submission Link", 
         // url: "https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FReACS2025%2F",
         // style: ""},
