@@ -21,6 +21,7 @@ function HeroSection() {
     // { name: "Submission", path: "/submission" },
     { name: "Schedule", path: "/schedule" },
     { name: "Committee", path: "/committee" },
+    { name: "Keynote", path: "/speakers" },
   ];
 
   const callsDropdownItems = [
@@ -28,7 +29,6 @@ function HeroSection() {
   ];
 
   const dropdownItems = [
-    { name: "Keynote Speakers", path: "/speakers" },
     { name: "About", path: "/about" }
   ];
 

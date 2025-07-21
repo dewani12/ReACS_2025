@@ -23,6 +23,7 @@ const Navbar = () => {
     // { name: "Submission", path: "/submission" },
     { name: "Schedule", path: "/schedule" },
     { name: "Committee", path: "/committee" },
+    { name: "Keynote", path: "/speakers" },
   ];
 
   const callsDropdownItems = [
@@ -30,7 +31,7 @@ const Navbar = () => {
   ];
 
   const dropdownItems = [
-    { name: "Keynote Speakers", path: "/speakers" },
+    // { name: "Keynote Speakers", path: "/speakers" },
     { name: "About", path: "/about" },
   ];
 

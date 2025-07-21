@@ -29,21 +29,22 @@ const speakersData = [
   {
     type: "Keynote Speakers",
     members: [
+
       {
-        name: "Prof. Sunil Kumar",
-        title: "Professor & Thomas G. Pine Faculty Fellow",
-        roles: ["Director, Multimedia & Wireless Networks Research Group"],
-        department: "Electrical and Computer Engineering Department",
-        university: "San Diego State University, USA",
-        image: img1
-      },
-      {
-        name: "Sankar Kumar Pal",
-        title: "National Science Chair, Gol, Padma Shree in Science and Engineering,2013",
-        roles: ["President, ISI"],
+        name: "Prof. Sankar Kumar Pal",
+        title: "National Science Chair, GoI",
+        roles: ["Padma Shree in Science and Engineering, 2013", "President, ISI"],
         department: "Distinguished Scientist",
         university: "Former Director, ISI Kolkata",
         image: img2
+      },
+      {
+        name: "Prof. Sunil Kumar",
+        title: "Professor & Thomas G. Pine Faculty Fellow Director",
+        roles: ["Multimedia & Wireless Networks Research Group"],
+        department: "Electrical and Computer Engineering Department",
+        university: "San Diego State University, USA",
+        image: img1
       }
     ]
   },
@@ -54,7 +55,7 @@ const speakersData = [
         name: "Mr. Diptiman Purbey",
         title: "Engineering Manager 2 at Uber",
         roles: ["Adjunct Faculty at IIIT Gwalior"],
-        department: "Ex-Senior Software Engineer,",
+        department: "Ex-Senior Software Engineer",
         university: "Microsoft, India",
         image: img3
       },
