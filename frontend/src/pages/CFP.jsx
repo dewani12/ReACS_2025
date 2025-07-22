@@ -1,6 +1,6 @@
 import { Download } from "lucide-react"
 import { Navbar, Footer } from "../components"
-import brochure from "../assets/ReACS2025_CFP_Brochure_Second_Phase_Extended_Deadline.pdf"
+import brochure from "../assets/ReACS_2025_CFP_Brochure_SecondPhase_Extended_Deadline-2.pdf"
 
 function CFP() {
     const RegularTracks = [
