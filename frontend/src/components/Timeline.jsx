@@ -19,7 +19,7 @@ const TimeLine = () => {
             done: false,
         },
         {   
-            newDate: "15 July, 2025",
+            oldDate: "21 July, 2025",
             label: "Early Bird Registration Deadline",
             done: false,
         },
