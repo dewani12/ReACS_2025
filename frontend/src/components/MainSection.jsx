@@ -37,6 +37,7 @@ function MainSection() {
         },
     ]
     const updates = [
+        { text: "Third Phase Paper Submission Starts on 02 August 2025" },
         { text: "Extended Second Phase Paper Submission Deadline 20 July 2025" },
         {
             text: "Registration instructions and details are updated",
