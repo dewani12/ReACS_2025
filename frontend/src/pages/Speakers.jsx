@@ -2,6 +2,7 @@ import { Footer, Navbar } from '../components';
 import img1 from '../assets/speaker1.jpg';
 import img2 from '../assets/speaker2.jpg';
 import img3 from '../assets/speaker3.jpeg';
+import img4 from '../assets/speaker4.jpg';
 
 
 function SpeakerCard({ name, title, roles, department, university, image }) {
@@ -60,7 +61,21 @@ const speakersData = [
         image: img3
       },
     ]
-  }
+  },
+  {
+    type: "Tutorial Session",
+    members: [
+      {
+        name: "Mr. Gurucharan Singh",
+        title: "Faculty Member for Cyber Crimes",
+        roles: ["Central Detective Training Institute"],
+        department: "Bureau of Police Research & Development, Ministry of Home Affairs",
+        university: "CFIs Complex, Sec 36A, Plot No.2, Dakshin Marg, CHANDIGARH –160036",
+        image: img4
+      },
+    ]
+  },
+  
 ];
 
 function Speakers() {
