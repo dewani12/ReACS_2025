@@ -7,11 +7,11 @@ function Registration() {
       <Navbar />
       <div className="inter py-4 px-4 md:px-12 sm:py-4 md:py-6 max-w-[1280px] mx-auto">
         <div className="pb-5">
-          <div className="text-2xl font-semibold">Important Dates (first-phase)</div>
+          <div className="text-2xl font-semibold">Important Dates (second-phase)</div>
           <ul className="mt-2 ml-5 list-disc space-y-2 text-sm">
-            <li><span className="font-semibold">Deadline for Early Bird Registration:</span> 21 July 2025</li>
-            <li><span className="font-semibold">Deadline for Camera-Ready Submission:</span> 31 July 2025</li>
-            <li><span className="font-semibold">All Registration Deadlines Close On:</span> 31 July 2025</li>
+            <li><span className="font-semibold">Deadline for Early Bird Registration:</span> 15 September 2025</li>
+            <li><span className="font-semibold">Deadline for Camera-Ready Submission:</span> 30 September 2025</li>
+            <li><span className="font-semibold">All Registration Deadlines Close On:</span> 30 September 2025</li>
           </ul>
         </div>
         <div className="pb-5">

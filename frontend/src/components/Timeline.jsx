@@ -43,7 +43,7 @@ const TimeLine = () => {
             label: "Paper Submission Deadline",
         },
         {   
-            newDate: "31 August, 2025",
+            oldDate: "31 August, 2025",
             label: "Acceptance Notification",
         },
         {   
@@ -63,13 +63,13 @@ const TimeLine = () => {
 
     const ThirdPhaseEvents = [
         {   
-            newDate: "02 August, 2025",
+            oldDate: "02 August, 2025",
             label: "Paper Submission Open",
         },
         {   
             // oldDate: "07 July, 2025",
             // oldDate: "20 July, 2025",
-            newDate: "31 August, 2025",
+            oldDate: "31 August, 2025",
             label: "Paper Submission Deadline",
         },
         {   
