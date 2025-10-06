@@ -47,11 +47,11 @@ const TimeLine = () => {
             label: "Acceptance Notification",
         },
         {   
-            newDate: "15 September, 2025",
+            oldDate: "15 September, 2025",
             label: "Early Bird Registration Deadline",
         },
         {   
-            newDate: "30 September , 2025",
+            oldDate: "30 September , 2025",
             label: "Camera Ready Submission",
         },
         {
@@ -73,7 +73,7 @@ const TimeLine = () => {
             label: "Paper Submission Deadline",
         },
         {   
-            newDate: "30 September, 2025",
+            oldDate: "30 September, 2025",
             label: "Acceptance Notification",
         },
         {   
