@@ -29,6 +29,7 @@ function HeroSection() {
   ];
 
   const dropdownItems = [
+    {name:"Accommodation", path: "/attende"},
     { name: "About", path: "/about" }
   ];
 
