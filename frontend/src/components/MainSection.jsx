@@ -43,6 +43,10 @@ function MainSection() {
             text: "Registration instructions and details are updated",
             url: "/registration",
         },
+        {
+            text: "Accomodation is available at ABV-IIITM Gwalior",
+            url: "/attende",
+        },
         {text:"Second Phase Acceptance Notification mail has been sent"},
         {
             text: "Keynote Speakers",
