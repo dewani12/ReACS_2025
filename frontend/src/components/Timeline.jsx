@@ -19,12 +19,12 @@ const TimeLine = () => {
             done: false,
         },
         {   
-            newDate: "15 July, 2025",
+            oldDate: "21 July, 2025",
             label: "Early Bird Registration Deadline",
             done: false,
         },
         {   
-            newDate: "31 July, 2025",
+            oldDate: "31 July, 2025",
             label: "Camera Ready Submission",
             done: false,
         },
@@ -33,24 +33,55 @@ const TimeLine = () => {
 
     const SecondPhaseEvents = [
         {   
-            newDate: "07 June, 2025",
+            oldDate: "07 June, 2025",
             label: "Paper Submission Open",
         },
         {   
-            oldDate: "07 July, 2025",
-            newDate: "20 July, 2025",
+            // oldDate: "07 July, 2025",
+            // oldDate: "20 July, 2025",
+            oldDate: "01 August, 2025",
             label: "Paper Submission Deadline",
         },
         {   
-            newDate: "31 August, 2025",
+            oldDate: "31 August, 2025",
             label: "Acceptance Notification",
         },
         {   
-            newDate: "15 September, 2025",
+            oldDate: "15 September, 2025",
             label: "Early Bird Registration Deadline",
         },
         {   
-            newDate: "30 September , 2025",
+            oldDate: "30 September , 2025",
+            label: "Camera Ready Submission",
+        },
+        {
+            newDate: "19-20 December, 2025",
+            label: "Conference Dates",
+            done: false,
+        }
+    ];
+
+    const ThirdPhaseEvents = [
+        {   
+            oldDate: "02 August, 2025",
+            label: "Paper Submission Open",
+        },
+        {   
+            // oldDate: "07 July, 2025",
+            // oldDate: "20 July, 2025",
+            oldDate: "31 August, 2025",
+            label: "Paper Submission Deadline",
+        },
+        {   
+            oldDate: "30 September, 2025",
+            label: "Acceptance Notification",
+        },
+        {   
+            newDate: "10 October, 2025",
+            label: "Early Bird Registration Deadline",
+        },
+        {   
+            newDate: "20 October, 2025",
             label: "Camera Ready Submission",
         },
         {
@@ -63,6 +94,34 @@ const TimeLine = () => {
     return (
         <div>
             <div className="border-l-3 py-1 border-[#0054B0] relative">
+
+                <div className="pl-5 mb-4 relative">
+                    <div className="absolute h-11 left-[14px] text-[#0054B0] transform -translate-x-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 80" className="w-full h-full">
+                        <path 
+                            d="M4 8L20 24L4 40L44 24L4 8Z" 
+                            fill="#000000" 
+                            stroke="#0054B0" 
+                            strokeWidth="3"
+                            strokeLinejoin="round"
+                        />
+                        </svg>
+                    </div>
+                    <p className="text-lg font-bold">Third Phase</p>
+                </div>    
+                {ThirdPhaseEvents.map((event, index) => (
+                    <div key={index} className="text-sm mb-8 pl-5 relative">
+                        <div className="absolute -left-2 top-1 w-4 h-4 bg-[#0054B0] rounded-full flex items-center justify-center">
+                            <span className="bg-black w-3 h-3 rounded-full"></span>
+                        </div>
+                        {event.oldDate && (
+                            <p className="text-red-500 line-through decoration-2 font-bold">{event.oldDate}</p>
+                        )}
+                        <p className="text-[#0054B0] font-bold">{event.newDate}</p>
+                        <p className="font-bold">{event.label}</p>
+                    </div>
+                ))}
+                
 
                 <div className="pl-5 mb-4 relative">
                     <div className="absolute h-11 left-[14px] text-[#0054B0] transform -translate-x-full">

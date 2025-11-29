@@ -37,10 +37,21 @@ function MainSection() {
         },
     ]
     const updates = [
-        { text: "Extended Second Phase Paper Submission Deadline 20 July 2025" },
+        // { text: "Third Phase Paper Submission Starts on 02 August 2025" },
+        // { text: "Extended Second Phase Paper Submission Deadline 20 July 2025" },
         {
             text: "Registration instructions and details are updated",
             url: "/registration",
+        },
+        {
+            text: "Accomodation is available at ABV-IIITM Gwalior",
+            url: "/attende",
+        },
+        {text:"Second Phase Acceptance Notification mail has been sent"},
+        {
+            text: "Keynote Speakers",
+            url: "/speakers",
+            style: "color: blue;"
         },
         // {text:"First Phase Paper Submission Link", 
         // url: "https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FReACS2025%2F",
@@ -51,7 +62,7 @@ function MainSection() {
             url: "/crs",
             style: "color: blue;"
         },
-        { text: "Second Phase Paper Submission Starts on 07 June 2025" },
+        // { text: "Second Phase Paper Submission Starts on 07 June 2025" },
         // {text:"Call for Papers Brochure", url: "https://reacs2025.s3.ap-south-1.amazonaws.com/CFP_Brochure.pdf"}
     ]
 
