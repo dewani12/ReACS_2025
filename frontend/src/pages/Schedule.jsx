@@ -483,8 +483,7 @@ function Schedule() {
             { id: 582, name: "Framework for Gym Posture Estimation using MediaPipe and OpenCV" },
             { id: 607, name: "Enhanced Whale Optimization Algorithm Integrated with Deep Learning-Based Edge Detection" },
             { id: 654, name: "Real-Time Analog Gauge Digitization Using 3D SegFormer & Physics-Guided Neural Rendering" },
-            { id: 987, name: "LexiBoost: AI-Powered Automated Essay Scoring System" },
-            { id: "-", name: "Deep Learning-Based Multi-Angle Classification of Tree Species from UAV Images" }
+            { id: 987, name: "LexiBoost: AI-Powered Automated Essay Scoring System with Comparative Model Analysis" },
           ]}
         />
 
