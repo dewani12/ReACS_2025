@@ -44,6 +44,10 @@ function MainSection() {
             url: "/registration",
         },
         {
+            text: "Program schedule is live now",
+            url: "/schedule",
+        },
+        {
             text: "Accomodation is available at ABV-IIITM Gwalior",
             url: "/attende",
         },
