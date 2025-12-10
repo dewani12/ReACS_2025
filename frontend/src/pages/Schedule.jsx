@@ -2,7 +2,6 @@ import { Footer, Navbar } from "../components/index.js";
 import schedule from "../assets/ReACS 2025 Conference Oral presentation Schedule.pdf";
 import overall from "../assets/Final overall.pdf";
 import { Download } from "lucide-react"
-import overall1 from "../assets/overall1.png";
 
 function TableHeading({ track, session, timing, venue }) {
   return (
