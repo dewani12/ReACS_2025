@@ -40,6 +40,10 @@ function MainSection() {
         // { text: "Third Phase Paper Submission Starts on 02 August 2025" },
         // { text: "Extended Second Phase Paper Submission Deadline 20 July 2025" },
         {
+            text: "Conference Successfully Concluded",
+            style: "color: blue;",
+        },
+        {
             text: "Registration instructions and details are updated",
             url: "/registration",
         },

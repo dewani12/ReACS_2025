@@ -93,6 +93,9 @@ function HeroSection() {
           <p className="mt-4 tracking-wider text-sm md:text-lg text-white text-center font-bold">
             19-20 December 2025 &#x2022; ABV-IIITM Gwalior, India
           </p>
+          <p className="mt-4 tracking-wider text-sm md:text-lg text-white text-center font-bold">
+            Conference Successfully Concluded
+          </p>
 
           {/* Navbar */}
           <nav className="relative z-10 mt-8">

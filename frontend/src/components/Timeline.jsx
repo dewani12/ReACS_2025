@@ -55,7 +55,7 @@ const TimeLine = () => {
             label: "Camera Ready Submission",
         },
         {
-            newDate: "19-20 December, 2025",
+            oldDate: "19-20 December, 2025",
             label: "Conference Dates",
             done: false,
         }
@@ -77,15 +77,15 @@ const TimeLine = () => {
             label: "Acceptance Notification",
         },
         {   
-            newDate: "10 October, 2025",
+            oldDate: "10 October, 2025",
             label: "Early Bird Registration Deadline",
         },
         {   
-            newDate: "20 October, 2025",
+            oldDate: "20 October, 2025",
             label: "Camera Ready Submission",
         },
         {
-            newDate: "19-20 December, 2025",
+            oldDate: "19-20 December, 2025",
             label: "Conference Dates",
             done: false,
         }
